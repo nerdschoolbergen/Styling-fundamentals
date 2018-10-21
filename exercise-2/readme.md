@@ -17,7 +17,7 @@ You will learn about
 
 :exclamation: The following image illustrates the wanted layout for this example.
 
-IMG HERE
+![1-1.png]
 
 :book: If we compare the image with the starting point on Codepen we see that there are a few things that are off.
 - The child containers are misaligned and overflow the parent container
