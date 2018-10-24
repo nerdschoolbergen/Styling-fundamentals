@@ -41,7 +41,7 @@ In order to talk about selector specificity we should first talk about the main 
 An element selctor is the most basic form of selector. Its specified using the name of the corresponding HTML-element type you want to target, like `div`, `p`, `span`, `body` etc.
 ```css
 p {
-  // I target all paragraphs. But remember, I can be overwritten by declarations later in the style sheet
+  /* I target all paragraphs. But remember, I can be overwritten by declarations later in the style sheet */
 }
 ```
 ### Class
@@ -55,19 +55,21 @@ A class selector is something that is applied to an HTML-element using the `styl
 Pseudo classes are most often used to trigger specific styles on element states like when you hover over a link or focus on an element using tab on your keyboard. But a pseudo class can also target more abstract element properties like the first or last child within a parent element, or if the element is an "only-child", or even if the element does NOT contain another selector. Pseudo classes can be used by themselves, but are usually used in conjuntion with another selector in order to not be to general. We use "colon"(`:`) notation to specify pseudo classes.
 ```css
 :hover {
-  // This is not a good idea since this rule will apply to every element that you hover, including the html document itself
+  /* This is not a good idea since this rule will apply to every element that you hover, 
+     including the html document itself */
 }
 
 a:hover {
-  // This will apply to all links that are hovered
+  /* This will apply to all links that are hovered */
 }
 
 .class:last-child {
-  // This will apply to the last element within a parent element with the class ".class"
+  /* This will apply to the last element within a parent element with the class ".class" */
 }
 
 .class:not(.another-class) {
-  // This rule will only apply to an element with the class ".class" if it does NOT also have the class ".another-class"
+  /* This rule will only apply to an element with the class ".class" if it does NOT also 
+     have the class ".another-class" */
 }
 ```
 [Handy reference of all available pseudo classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
@@ -80,12 +82,14 @@ button[disabled] {
 }
 
 a[href*="https://"] {
-  // Targets all external links that use the HTTPS protocol (* sybolises that "string starts with")
+  /* Targets all external links that use the HTTPS protocol
+     (* sybolises that "string starts with") */
 }
 
 [data-my-magic-attribute$="!"] {
-  // Targets all elements that have the custom attribute "data-my-magic-attribute" that has a value that ends with an exclamation point
-  // ($ sybolises that "string ends with")
+  /* Targets all elements that have the custom attribute "data-my-magic-attribute"
+     that has a value that ends with an exclamation point
+     ($ sybolises that "string ends with") */
 }
 ```
 
