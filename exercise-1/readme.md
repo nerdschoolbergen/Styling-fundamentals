@@ -78,7 +78,7 @@ Attribute selectors can be targeted towards all other HTML-element attributes th
 :exclamation: [In attribute selectors we can even use pseudo-regular expressions to target attribute values](https://css-tricks.com/attribute-selectors/)
 ```css
 button[disabled] {
-  // Targets all button elements that have a disabled attribute
+  /* Targets all button elements that have a disabled attribute */
 }
 
 a[href*="https://"] {
