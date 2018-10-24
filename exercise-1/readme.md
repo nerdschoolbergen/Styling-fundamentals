@@ -75,11 +75,11 @@ a:hover {
 [Handy reference of all available pseudo classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 ### Attribute
 Attribute selectors can be targeted towards all other HTML-element attributes than `class` (explained above) and `id` (explained later). Some common attributes to style would be the `disabled` attribute on a button element
-```css
-  <button disabled>Disabled button</button>
+```html
+<button disabled>Disabled button</button>
 ```
 or a link based on the content of it's `href` attribute. Since we in HTML5 are allowed to create our own attributes on any element using the `data-` prefix
-```css
+```html
 <div data-my-magic-attribute="I also have a value!">I have a custom attribute</div>
 ```
 , we could essentially use attributes like we would use classes(but please don't). We target attributes in CSS using "bracket"(`[]`) notation.
