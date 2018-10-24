@@ -80,11 +80,12 @@ button[disabled] {
 }
 
 a[href*="https://"] {
-  // Targets all external links that use the HTTPS protocol
+  // Targets all external links that use the HTTPS protocol (* sybolises that "string starts with")
 }
 
 [data-my-magic-attribute$="!"] {
   // Targets all elements that have the custom attribute "data-my-magic-attribute" that has a value that ends with an exclamation point
+  // ($ sybolises that "string ends with")
 }
 ```
 
