@@ -1,4 +1,4 @@
-# Exercise 2 – Media queries and layouts
+# Exercise 3 – Media queries and layouts
 
 :exclamation:
 :question:
