@@ -1,27 +1,21 @@
 # Styling Fundametals
-Assignments aimed at practising the fundametals of styling for modern websites
+This workshop will give a short introduction to styling (CSS), and contain assignments aimed at practising the fundametals of styling for modern websites
 
-## Draft for assignment structure
+## What you need
+* Bring your own laptop
+* Any modern web browser: Firefox, Chrome etc
+* Your text editor of choice, preferrably an editor with directory browser such as Visual Studio Code (Sublime, Atom and WebStorm are also good alternatives).
 
-1. The cascade, selectors, and specificity
-  * The cascade
-  * Selectors and specificity
-  * Naming patterns to prevent specificity issues
-2. Sizing and the box model
-  * The display property (inline, inline-block, block, table, flex, grid), inline vs block element
-  * Normal flow vs out of flow (float, abolute/fixed positioning)
-  * Understanding how the box model affects sizing of elements
-3. Creating layouts
-  * Layouts using floats (keep it short, mostly here for historic purposes)
-  * Layouts using flexbox
-  * Layouts using grid
-  * Text layouts using column
-  * Remember to incorporate calc function for dynamic sizing
-4. Making it responsive
-  * Media queries
-  * Mobile first
-5. Short intro to transform and transition (css animations)
-  * Maybe talk about how we can use ::before/::after elements for styling and animation purposes
-  * Only add animations and transitions were it adds to usability/user experience
-  
+## Getting started
+* Start by cloning this repository into a folder on your computer. If you've never used git before, you can alternatively click the green "Clone or download" button and then click on "Download ZIP". Unzip the downloaded file to a folder on your computer.
 
+* Although you have this README.md file on your computer it's easier to read it on GitHub, so we recommend you keep this page open with the exercise tasks.
+
+## Exercises 
+[Exercise 1](exercise-1/readme.md)
+
+[Exercise 2](exercise-2/readme.md)
+
+[Exercise 3](exercise-3/readme.md)
+
+[Exercise 4](exercise-4/readme.md)
