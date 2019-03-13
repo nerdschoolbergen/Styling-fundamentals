@@ -136,4 +136,25 @@ When styling HTML-elements you do not necessarily need to have a stylesheet, you
   </div>
 ```
 
+The example above contains a div with two elements, having the style separate form the html would look much cleaner:
+```html
+  <div id="main-content">
+    <h1>Underlined title element with font size of 64px</h1>
+    <p>A paragraph that is colored red and have font weight bold.</p>
+  </div>
+```
+
+```css
+  h1 {
+    font-size: 64px;
+    text-decoration: underline;
+  }
+  
+  p {
+    color: red; 
+    font-weight: bold;
+  }
+```
+
+
 
