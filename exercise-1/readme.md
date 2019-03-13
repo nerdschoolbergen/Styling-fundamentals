@@ -124,7 +124,7 @@ p {
 p#red-text {
   color: red;
 }
-``
+```
 
 ### Style attribute
 When styling HTML-elements you do not necessarily need to have a stylesheet, you can write styles inside a "style" attribute directly on the element itself such as this: `<p style="color: red">This text is red</p>` Usually this type of styling is regarded as bad practice, because the markup and content of the site should be separated from the styling. The style 
