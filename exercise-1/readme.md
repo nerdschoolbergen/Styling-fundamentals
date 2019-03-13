@@ -127,5 +127,13 @@ p#red-text {
 ```
 
 ### Style attribute
-When styling HTML-elements you do not necessarily need to have a stylesheet, you can write styles inside a "style" attribute directly on the element itself such as this: `<p style="color: red">This text is red</p>` Usually this type of styling is regarded as bad practice, because the markup and content of the site should be separated from the styling. The style 
+When styling HTML-elements you do not necessarily need to have a stylesheet, you can write (inline) styles inside a "style" attribute directly on the element itself, such as this: `<p style="color: red">This text is red</p>` This type of styling is regarded as bad practice, because the markup and content of the site should be separated from the styling.
+
+```html
+  <div id="main-content">
+    <h1 style="font-size: 64px; text-decoration: underline">Underlined title element with font size of 64px</h1>
+    <p style="color: red; font-weight: bold">A paragraph that is colored red and have font weight bold.</p>
+  </div>
+```
+
 
