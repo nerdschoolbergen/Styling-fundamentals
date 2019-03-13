@@ -136,7 +136,8 @@ When styling HTML-elements you do not necessarily need to have a stylesheet, you
   </div>
 ```
 
-The example above contains a div with two elements, having the style separate form the html would look much cleaner:
+The example above contains a div with two elements, separating the styles form the html would make the markup more readable:
+
 ```html
   <div id="main-content">
     <h1>Underlined title element with font size of 64px</h1>
