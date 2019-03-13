@@ -9,7 +9,7 @@ You will learn about:
 - Selector combinators
 - User agent style sheets?
 
-## 1.1 Subtitle
+### The Cascade
 :book: The "cascade" part of the name cascading style sheet is in itself pretty simple: the order in which CSS rules are declared matter. The rules defined last in a stylesheet take precedence over the ones defined earlier.
 ```css
 selector1 {
@@ -45,7 +45,7 @@ p {
 }
 ```
 ### Class
-A class selector is something that is applied to an HTML-element using the `style` attribute: `<div style="fancy-class">I have a class</div>`. We use the "dot"(`.`) notation to target them in CSS.
+A class selector is something that is applied to an HTML-element using the `class` attribute: `<div class="fancy-class">I have a class</div>`. We use the "dot"(`.`) notation to target them in CSS.
 ```css
 .fancy-class {
   // I'm a class rule!
