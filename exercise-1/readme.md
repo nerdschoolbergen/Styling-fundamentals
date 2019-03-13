@@ -105,6 +105,22 @@ The id selector are meant to target all HTML-elements that are unique. For the i
 
 Elements that tends to have ids are main sections of webpages such as the header, main content or the footer. Other specific elements such as input fields may have unique id's so that javascript functions can target them.
 
+```css
+button#submit {
+  /* Targets a button element that have a id="submit" -> <button id="submit">Submit</button> */
+}
+
+#menu li {
+  /* Targets all li elements that are children to an element with the id="menu" */
+}
+
+[data-my-magic-attribute$="!"] {
+  /* Targets all elements that have the custom attribute "data-my-magic-attribute"
+     that has a value that ends with an exclamation point
+     ($ sybolises that "string ends with") */
+}
+```
+
 ### Style attribute
 
 
