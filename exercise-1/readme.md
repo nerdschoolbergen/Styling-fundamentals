@@ -100,4 +100,11 @@ a[href*="https://"] {
      ($ sybolises that "string ends with") */
 }
 ```
+### Id
+The id selector are meant to target all HTML-elements that are unique. For the id tag to be considered valid by the browser the id must be unique to the specific element. An example of an element with a id tag: `<div id="unique-item">This item is unique</div>`
+
+Elements that tends to have ids are main sections of webpages such as the header, main content or the footer. Other specific elements such as input fields may have unique id's so that javascript functions can target them.
+
+### Style attribute
+
 
