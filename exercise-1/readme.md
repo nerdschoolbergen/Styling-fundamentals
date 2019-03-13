@@ -52,10 +52,10 @@ A class selector is something that is applied to an HTML-element using the `clas
 }
 ```
 ### Pseudo class
-Pseudo classes are most often used to trigger specific styles on element states like when you hover over a link or focus on an element using tab on your keyboard. But a pseudo class can also target more abstract element properties like the first or last child within a parent element, or if the element is an "only-child", or even if the element does NOT contain another selector. Pseudo classes can be used by themselves, but are usually used in conjuntion with another selector in order to not be to general. We use "colon"(`:`) notation to specify pseudo classes.
+Pseudo classes are most often used to trigger specific styles on element states like when you hover over a link or focus on an element using tab on your keyboard. But a pseudo class can also target more abstract element properties like the first or last child within a parent element, or if the element is an "only-child", or even if the element does NOT contain another selector. Pseudo classes can be used by themselves, but are usually used in conjunction with another selector in order to not be too general. We use "colon"(`:`) notation to specify pseudo classes.
 ```css
 :hover {
-  /* This is not a good idea since this rule will apply to every element that you hover, 
+  /* This is not a good, idea since this rule will apply to every element that you hover, 
      including the html document itself */
 }
 
