@@ -115,6 +115,7 @@ button#submit {
 }
 ```
 :book: The Id tag is more specific than targeting a class or and element, and will overwrite previous styles applied to those elements.
+In the example below the second css rule that points towars p elements with the id "red-text" will overrule the previous one and turn that specific element red, while all other p elements will be blue.
 ```css
 p {
   color: blue;
@@ -123,8 +124,7 @@ p {
 p#red-text {
   color: red;
 }
-// in this case the second css rule that points towars p elements with the id "red-text" will overrule the previous one and turn that specific element red, while all other p elements will be blue.
-```
+``
 
 ### Style attribute
 When styling HTML-elements you do not necessarily need to have a stylesheet, you can write styles inside a "style" attribute directly on the element itself such as this: `<p style="color: red">This text is red</p>` Usually this type of styling is regarded as bad practice, because the markup and content of the site should be separated from the styling. The style 
