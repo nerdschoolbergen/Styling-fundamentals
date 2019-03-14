@@ -21,7 +21,8 @@ For full details of display properties check out: [Display properties](https://d
 `display: block` The block element will take up all horizontal space in the parent container, it will allways start on a new line from previous elements and stretch to the end of what confines it
 
 ### flex
-Flexbox is a bit more complicated than the previous displays, putting `display: flex` on a container makes the width and/or height of children elements flex dynamically when the parent container is resized, essentially the elements are stretching and moving either in a row or in a column configuration, imagine a musician playing an accordion. The flex container can have 6 different properties:
+Check out this overview for a more detailed explanation of flexbox: [Flexbox concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+Flexbox is a bit more complicated than the previous displays, putting `display: flex` on a container makes the children elements flex dynamically when the parent container is resized, essentially the elements are stretching and moving either in a row or in a column configuration, imagine a musician playing an accordion. The flex container can have 6 different properties:
 
 ### flex-direction
 Flex-direction decides which direction the children elements are flexing. `row` makes the elements flex horizontally `row-reverse` reverses the order of the items in horizontal view, `column` makes the elements spread out vertically, and `column-reverse` will do the same just backwards.
@@ -38,12 +39,12 @@ The default value for `flex-wrap` is set to no-wrap, this is so that items can b
 
 ### flex-flow
 `flex-flow` is a shorthand property for setting both `flex-wrap` and `flex-direction`.
-```
+```css
  .main-content {
    display: flex;
    flex-flow: row wrap;
  }
- //is the same as 
+ /* is the same as */ 
  .main-content {
    display: flex;
    flex-direction: row;
@@ -51,7 +52,27 @@ The default value for `flex-wrap` is set to no-wrap, this is so that items can b
  }
 ```
 ### justify-content
+Using `justify-content` can control the white-space between flexing items and their parent container. The different values are; `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
+
+```css 
+ .main-content {
+  display: flex;
+  justify-content: flex-end; 
+  /* this will push all children elements to the right side of the parent container if there is available space */
+ }
+```
+
+```css 
+ .main-content {
+  display: flex;
+  flex-direction: reverse-row;
+  justify-content: center; 
+  /* this will make all child elements flex in reverse order and be centered in the parent container */
+ }
+```
+
 ### align-items
+`align-items` is used for placing items vertically relative to the flex-direction. If `flex-direction` is row and `align-items`
 ### align-content
 
 
