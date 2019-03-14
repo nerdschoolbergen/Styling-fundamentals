@@ -1,5 +1,5 @@
 # Exercise 1 - The cascade, selectors, and specificity
-This assignment will focus on tackling one of the most common challenges of CSS: selector specificity. Since CSS by nature has a global scope, understanding specificity is fundemnental in order to contol it.
+This exercise will focus on tackling one of the most common challenges of CSS: selector specificity. Since CSS by nature has a global scope, understanding specificity is fundemnental in order to contol it.
 
 You will learn about:
 - What the cascading part of CSS (Cascading Style Sheets) means
