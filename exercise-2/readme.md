@@ -8,7 +8,7 @@ You will learn about:
 
 ## Display properties
 The display property plays an important role in CSS, it decides how an HTML-element will behave in relation to other elements.
-In this exercise we will take a look at inline, inline-block, block, flex and grid.
+In this exercise we will take a look at the most important display properties; inline, inline-block, block, flex and grid.
 For full details of display properties check out: [Display properties](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
 ### inline
@@ -34,7 +34,22 @@ Default flex-direction is set to "row", so if you want a collection of items to 
  }
 ```
 ### flex-wrap
+The default value for `flex-wrap` is set to no-wrap, this is so that items can behave as described above, like an accordion. Setting the value to wrap will make the HTML-elements "jump" to the next line if the parent container shrinks.
+
 ### flex-flow
+`flex-flow` is a shorthand property for setting both `flex-wrap` and `flex-direction`.
+```
+ .main-content {
+   display: flex;
+   flex-flow: row wrap;
+ }
+ //is the same as 
+ .main-content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+```
 ### justify-content
 ### align-items
 ### align-content
