@@ -10,7 +10,7 @@ You will learn about:
 - User agent style sheets?
 
 ### The Cascade
-:book: The "cascade" part of the name cascading style sheet is in itself pretty simple: the order in which CSS rules are declared matter. The rules defined last in a stylesheet take precedence over the ones defined earlier.
+The "cascade" part of the name cascading style sheet is in itself pretty simple: the order in which CSS rules are declared matter. The rules defined last in a stylesheet take precedence over the ones defined earlier.
 ```css
 selector1 {
   color: red;
@@ -114,7 +114,7 @@ button#submit {
   /* Targets all li elements that are children to an element with the id="menu" */
 }
 ```
-:book: The Id tag is more specific than targeting a class or and element, and will overwrite previous styles applied to those elements.
+The Id tag is more specific than targeting a class or and element, and will overwrite previous styles applied to those elements.
 In the example below the second css rule that points towars p elements with the id "red-text" will overrule the previous one and turn that specific element red, while all other p elements will be blue.
 ```css
 p {
@@ -156,6 +156,3 @@ The example above contains a div with two elements, separating the styles form t
     font-weight: bold;
   }
 ```
-
-
-
