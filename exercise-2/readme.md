@@ -2,9 +2,25 @@
 This exercise will focus on the sizing and box model of CSS, which will be important knowledge to have before devling into layouts.
 
 You will learn about:
+- Understanding how the box model affects sizing of elements
 - Display properties
 - Normal flow vs out of flow (float, abolute/fixed positioning)
-- Understanding how the box model affects sizing of elements
+
+## The Box model
+![](images/box-model.png)
+
+The box model is a core concept of css, by understanding the box-model you will have a much easier time making layouts for webpages. The box model consists of the inner content, padding, border, outline and the margin.
+
+### Content 
+The innermost layer that contains the text or other elements of the target element.
+### Padding
+The layer just outside the content layer. Adding space to the padding will give the visual effect of increasing the size of the content layer.
+### Border
+The layer surrounding the padding layer. Many times this layer will have a small width of maybe only 1 pixel. Unlike the padding and margin layers, this layer can be given color and style.
+### Outline
+The layer surrounding the border layer. This layer many times is ignored since the border does basically the same job. It can be manipulated in the same way as the border layer and given color and style.
+### Margin
+The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of increasing the content size of the parent element.
 
 ## Display properties
 The display property plays an important role in CSS, it decides how an HTML-element will behave in relation to other elements.
@@ -57,7 +73,7 @@ The default value for `flex-wrap` is set to no-wrap, this is so that items can b
  }
 ```
 ### justify-content
-![](justify-content.png)
+![](images/justify-content.png)
 
 Using `justify-content` can control the justification inside the container of flexing items, and also white-space between flexing items and their parent container. The different values are; `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
 
@@ -79,13 +95,13 @@ Using `justify-content` can control the justification inside the container of fl
 ```
 
 ### align-items
-![](align-items.png)
+![](images/align-items.png)
 
 `align-items` property sets the align-self value on all direct children as a group. It sets the default alignment of the flex items along the cross axis of each flex line. If `flex-direction` is row and `align-items` is set to flex-start, the items will attach to the top of the container, if `flex-direction` is set to column however, `flex-start` will be pushed to the right in the container, think of `flex-drirection: column` as where you just flip the whole container forward 90degrees.
 
 
 ### align-content
-![](align-content.png)
+![](images/align-content.png)
 
 `align-content` aligns the flex-lines within the flex container when there is extra space in the cross-axis. This rule is only applied when you have a flex container with multiple lines of flexing items.
 
@@ -93,8 +109,6 @@ Using `justify-content` can control the justification inside the container of fl
 Explained in simple terms; elements can be said to be in normal flow when they appear on the page in the order that they are in the source. Things get interesting however when we take items out of normal flow. Using css rules such as `position: absolute` and `position: fixed` will take an element out of the flow, and the remaining elements will behave as if the out-of-flow element is not present. 
 
 These two css properties come with the values `top`, `left`, `right` and `bottom`, indicating to where the out-of-flow element will attach to. `position: fixed` is placed at a fixed point in relation to the browser window, `position: absolute` will be placed in relation to the closes element with `position: relative`, if none is found then it will be in relation to the browser window. When this is the case there is a slight difference between the two, `position: fixed` will be hovering in the same place in the browser window while you scroll, while `position: absolute` will still disappear if you scroll past the relative parent.
-
-## The Box model
 
 
 
