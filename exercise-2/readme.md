@@ -9,16 +9,17 @@ You will learn about:
 ## The Box model
 ![](images/box-model.png)
 
-The box model is a core concept of css, by understanding the box-model you will have a much easier time making layouts for webpages. The box model consists of the inner content, padding, border, outline and the margin.
+The box model is a core concept of css, by understanding the box-model you will have a much easier time making layouts for webpages utilizing the different properties. The box model consists of content, padding, border, outline and the margin.
 
 ### Content 
-The innermost layer that contains the text or other elements of the target element.
+The inner layer that contains the contents of the target element. Content can consist of any type of HTML-element
 ### Padding
-The layer just outside the content layer. Adding space to the padding will give the visual effect of increasing the size of the content layer.
+Outside of the content layer is the padding. Adding space to the padding will give the visual effect of having white-space around the content.
+You can give a box a 10px padding by typing: `padding: 10px`. Padding can also be given specific values such as this `padding-top: 10px` `padding-left: 25px` or the shorthand vertical and hortizontal syntax which is written like this: `padding: 0px 10px`. Or like this `padding: 10px 10px 10px 10px` for top, right, bottom and left padding. It all depends on what you are used to.
 ### Border
-The layer surrounding the padding layer. Many times this layer will have a small width of maybe only 1 pixel. Unlike the padding and margin layers, this layer can be given color and style.
+The layer surrounding the padding layer. Many times this will have a small width of maybe only 1 pixel. Unlike the padding and margin layers, this layer can be given color and style. and example of a faint thin grey border could be written like this: `border: 1px solid lightgray`.
 ### Margin
-The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of increasing the content size of the parent element.
+The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of pushing other close elements away with an invisible forcefield. Margins are written in the same style as padding. `margin-top: 10px`, or `margin: 15px 10px 20px 20px` for example.
 
 ## Display properties
 The display property plays an important role in CSS, it decides how an HTML-element will behave in relation to other elements.
