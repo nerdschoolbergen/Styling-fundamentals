@@ -17,8 +17,6 @@ The innermost layer that contains the text or other elements of the target eleme
 The layer just outside the content layer. Adding space to the padding will give the visual effect of increasing the size of the content layer.
 ### Border
 The layer surrounding the padding layer. Many times this layer will have a small width of maybe only 1 pixel. Unlike the padding and margin layers, this layer can be given color and style.
-### Outline
-The layer surrounding the border layer. This layer many times is ignored since the border does basically the same job. It can be manipulated in the same way as the border layer and given color and style.
 ### Margin
 The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of increasing the content size of the parent element.
 
