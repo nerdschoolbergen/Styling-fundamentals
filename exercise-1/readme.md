@@ -26,7 +26,7 @@ selector3 {
 ```
 If all these selectors would target the same element, it's text color would be blue since the declarations in `selector3` take precedence over the others.
 
-:exclamation:However, the type of selector you use can override the order in wich rules are specified.
+:exclamation: However, the type of selector you use can override the order in wich rules are specified.
 
 In order to talk about selector specificity we should first talk about the main groups of selectors:
 
