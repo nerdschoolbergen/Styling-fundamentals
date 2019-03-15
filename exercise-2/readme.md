@@ -11,6 +11,11 @@ The display property plays an important role in CSS, it decides how an HTML-elem
 In this exercise we will take a look at the most important display properties; inline, inline-block, block, flex and grid.
 For full details of display properties check out: [Display properties](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
+### None
+`display: none` takes the whole HTML-element out of the document flow, that means that if you have multiple images for example, and you set them to `display: none` the container will collapse and shrink. 
+
+:exclamation: A similar rule is `visibility: hidden`, it will hide items but not affect their presence in document, making the items still push on eachother while being invisible.
+
 ### inline
 `display: inline` will make an element behave as an inline element (like <span>). Any height and width properties will have no effect to it. Text and icons are common uses for display: inline.
 
@@ -54,7 +59,7 @@ The default value for `flex-wrap` is set to no-wrap, this is so that items can b
 ### justify-content
 ![](justify-content.png)
 
-Using `justify-content` can control the white-space between flexing items and their parent container. The different values are; `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
+Using `justify-content` can control the justification inside the container of flexing items, and also white-space between flexing items and their parent container. The different values are; `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
 
 ```css 
  .main-content {
@@ -76,20 +81,18 @@ Using `justify-content` can control the white-space between flexing items and th
 ### align-items
 ![](align-items.png)
 
-`align-items` property sets the align-self value on all direct children as a group. The `align-self` property sets the alignment of an item within its containing block.
-
-If `flex-direction` is row and `align-items` is set to flex-start, the items will attach to the top of the container, if `flex-direction` is set to column however, flex-start
+`align-items` property sets the align-self value on all direct children as a group. It sets the default alignment of the flex items along the cross axis of each flex line. If `flex-direction` is row and `align-items` is set to flex-start, the items will attach to the top of the container, if `flex-direction` is set to column however, `flex-start` will be pushed to the right in the container, think of `flex-drirection: column` as where you just flip the whole container forward 90degrees.
 
 
 ### align-content
 ![](align-content.png)
 
-
-### grid
-
-### None
+`align-content` aligns the flex-lines within the flex container when there is extra space in the cross-axis. This rule is only applied when you have a flex container with multiple lines of flexing items.
 
 ## Flow
+Explained in simple terms; elements can be said to be in normal flow when they appear on the page in the order that they are in the source. Things get interesting however when we take items out of normal flow. Using css rules such as `position: absolute` and `position: fixed` will take an element out of the flow, and the remaining elements will behave as if the out-of-flow element is not present. 
+
+These two css properties come with the values `top`, `left`, `right` and `bottom`, indicating to where the out-of-flow element will attach to. `position: fixed` is placed at a fixed point in relation to the browser window, `position: absolute` will be placed in relation to the closes element with `position: relative`, if none is found then it will be in relation to the browser window. When this is the case there is a slight difference between the two, `position: fixed` will be hovering in the same place in the browser window while you scroll, while `position: absolute` will still disappear if you scroll past the relative parent.
 
 ## The Box model
 
