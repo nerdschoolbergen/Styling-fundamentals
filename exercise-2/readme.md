@@ -52,6 +52,7 @@ The default value for `flex-wrap` is set to no-wrap, this is so that items can b
  }
 ```
 ### justify-content
+![](justify-content.png)
 Using `justify-content` can control the white-space between flexing items and their parent container. The different values are; `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
 
 ```css 
@@ -72,8 +73,14 @@ Using `justify-content` can control the white-space between flexing items and th
 ```
 
 ### align-items
-`align-items` is used for placing items vertically relative to the flex-direction. If `flex-direction` is row and `align-items`
+![](align-items.png)
+`align-items` property sets the align-self value on all direct children as a group. The `align-self` property sets the alignment of an item within its containing block.
+
+If `flex-direction` is row and `align-items` is set to flex-start, the items will attach to the top of the container, if `flex-direction` is set to column however, flex-start
+
+
 ### align-content
+![](align-content.png)
 
 
 ### grid
