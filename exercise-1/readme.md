@@ -1,13 +1,5 @@
 # Exercise 1 - The cascade, selectors, and specificity
-This exercise will focus on tackling one of the most common challenges of CSS: selector specificity. Since CSS by nature has a global scope, understanding specificity is fundemnental in order to contol it.
-
-You will learn about:
-- What the cascading part of CSS (Cascading Style Sheets) means
-- Inheritance
-- The basic groups of selectors and their corresponding specificity values
-- Pseudo classes and elements
-- Selector combinators
-- User agent style sheets?
+This exercise will focus on tackling one of the most common challenges of CSS: selector specificity and the cascade. Since CSS by nature has a global scope, understanding specificity is fundemnental in order to contol it.
 
 ### The Cascade
 The "cascade" part of the name cascading style sheet is in itself pretty simple: the order in which CSS rules are declared matter. The rules defined last in a stylesheet take precedence over the ones defined earlier.

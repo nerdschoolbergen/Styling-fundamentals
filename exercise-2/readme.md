@@ -23,7 +23,7 @@ The outermost layer between the target element and its parent element. Adding sp
 
 ## Display properties
 The display property plays an important role in CSS, it decides how an HTML-element will behave in relation to other elements.
-In this exercise we will take a look at the most important display properties; inline, inline-block, block, flex and grid.
+The most important display properties to learn are; none, inline, inline-block, block, flex and grid.
 For full details of display properties check out: [Display properties](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
 ### None
@@ -44,7 +44,7 @@ For full details of display properties check out: [Display properties](https://d
 Check out this overview for a more detailed explanation of flexbox: [Flexbox concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 Flexbox is a bit more complicated than the previous displays, putting `display: flex` on a container makes the children elements flex dynamically when the parent container is resized, essentially the elements are stretching and moving either in a row or in a column configuration, imagine a musician playing an accordion. The flex container can have 6 different properties:
 
-### flex-direction
+#### flex-direction
 Flex-direction decides which direction the children elements are flexing. `row` makes the elements flex horizontally `row-reverse` reverses the order of the items in horizontal view, `column` makes the elements spread out vertically, and `column-reverse` will do the same just backwards.
 
 Default flex-direction is set to "row", so if you want a collection of items to spread out vertically you type it like this:
@@ -54,10 +54,10 @@ Default flex-direction is set to "row", so if you want a collection of items to 
   flex-direction: column;
  }
 ```
-### flex-wrap
+#### flex-wrap
 The default value for `flex-wrap` is set to no-wrap, this is so that items can behave as described above, like an accordion. Setting the value to wrap will make the HTML-elements "jump" to the next line if the parent container shrinks.
 
-### flex-flow
+#### flex-flow
 `flex-flow` is a shorthand property for setting both `flex-wrap` and `flex-direction`.
 ```css
  .main-content {
@@ -71,7 +71,7 @@ The default value for `flex-wrap` is set to no-wrap, this is so that items can b
    flex-wrap: wrap;
  }
 ```
-### justify-content
+#### justify-content
 ![](images/justify-content.png)
 
 Using `justify-content` can control the justification inside the container of flexing items, and also white-space between flexing items and their parent container. The different values are; `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
@@ -93,13 +93,13 @@ Using `justify-content` can control the justification inside the container of fl
  }
 ```
 
-### align-items
+#### align-items
 ![](images/align-items.png)
 
 `align-items` property sets the align-self value on all direct children as a group. It sets the default alignment of the flex items along the cross axis of each flex line. If `flex-direction` is row and `align-items` is set to flex-start, the items will attach to the top of the container, if `flex-direction` is set to column however, `flex-start` will be pushed to the right in the container, think of `flex-drirection: column` as where you just flip the whole container forward 90degrees.
 
 
-### align-content
+#### align-content
 ![](images/align-content.png)
 
 `align-content` aligns the flex-lines within the flex container when there is extra space in the cross-axis. This rule is only applied when you have a flex container with multiple lines of flexing items.
