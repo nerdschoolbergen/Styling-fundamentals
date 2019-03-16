@@ -161,10 +161,24 @@ Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mo
 In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/Naden/pen/NJaOzM)
 
 #### Task 1
-Change the color of the h1 element to red. (The h1 element can be found on line 29 with `display: inline-block` rule already present)
+Change the color of the h1 element to red. (The h1 element can be found on line 29 with `display: inline-block` property already present)
+
+```css
+  h1 {
+    display: inline-block;
+    /* insert color properties here */
+  }
+```
 
 #### Task 2
-:pencil2: Make another identical rule for h1 and set the color to blue. See that it overrides the existing rule above it. You should have two h1 rules at this point, :exclamation: this is not best-practise but only for illustrating how the cascade works.
+Make another identical selector for h1 and set the color to blue. See that it overrides the existing css rule above it. You should have two h1 selector at this point.
+:exclamation: this is not best practise but only for illustrating how the cascade works.
 
 #### Task 3
-Make another identical rule for h1 and set the color to blue. See that it overrides the existing rule above it. 
+Notice that all images in the HTML have a class "image", create a new css rule for "image" at the bottom of the css window. Make the height of all the images 100px;
+
+```css 
+  .image {
+    /* Create a rule like this and type your properties */
+  }
+```
