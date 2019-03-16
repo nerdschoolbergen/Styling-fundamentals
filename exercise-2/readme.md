@@ -40,8 +40,8 @@ For full details of display properties check out: [Display properties](https://d
 ### block
 `display: block` The block element will take up all horizontal space in the parent container, it will allways start on a new line from previous elements and stretch to the end of what confines it
 
-### flex
-Check out this overview for a more detailed explanation of flexbox: [Flexbox concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+### Flexbox
+Check out this overview for a more detailed explanation of flexbox: [Flexbox concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) Also [This pen by Gabi](https://codepen.io/enxaneta/full/adLPwv) is a good interactive guide to flexbox.
 Flexbox is a bit more complicated than the previous displays, putting `display: flex` on a container makes the children elements flex dynamically when the parent container is resized, essentially the elements are stretching and moving either in a row or in a column configuration, imagine a musician playing an accordion. The flex container can have 6 different properties:
 
 #### flex-direction
@@ -110,4 +110,14 @@ Explained in simple terms; elements can be said to be in normal flow when they a
 These two css properties come with the values `top`, `left`, `right` and `bottom`, indicating to where the out-of-flow element will attach to. `position: fixed` is placed at a fixed point in relation to the browser window, `position: absolute` will be placed in relation to the closes element with `position: relative`, if none is found then it will be in relation to the browser window. When this is the case there is a slight difference between the two, `position: fixed` will be hovering in the same place in the browser window while you scroll, while `position: absolute` will still disappear if you scroll past the relative parent.
 
 
+## :pencil2: Tasks
+Remember to ask if you are stuck, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/taranger/pen/NJaOzM)
 
+#### Task 1
+#### Task 2
+#### Task 3
+#### Task 4
+#### Task 5
+#### Task 6
+#### Task 7

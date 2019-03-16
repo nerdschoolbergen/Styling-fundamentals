@@ -149,9 +149,9 @@ The example above contains a div with two elements, separating the styles form t
     font-weight: bold;
   }
 ```
-### :pencil2: Tasks
+## :pencil2: Tasks
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/Naden/pen/NJaOzM)
+In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/taranger/pen/NJaOzM)
 
 #### Task 1
 Change the color of the h1 element to red. (The h1 element can be found on line 29 with `display: inline-block` property already present)
