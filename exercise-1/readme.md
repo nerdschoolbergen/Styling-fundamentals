@@ -185,10 +185,11 @@ Notice that all images in the HTML have a class "image", create a new css rule f
 ```
 
 #### Task 4
-Make it so when you hover the checkboxes "<input>", the cursor changes to a pointer, if you are unsure read the section on pseudo classes above.
-You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute type="checkbox". 
+Make it so when you hover the checkboxes `<input>`, the cursor changes to a pointer, if you are unsure read the section on pseudo classes above.
+You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute `type="checkbox"`. 
 
 #### Task 5
 Target the `#content` id selector of the page and give it a background color using the value "#c3e4d6", and a padding of of 20px;
 
 #### Task 6
+Add a inline style attribute to the h1 header and add a property that puts the font-size at 50px;
