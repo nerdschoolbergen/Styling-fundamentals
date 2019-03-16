@@ -156,15 +156,15 @@ The example above contains a div with two elements, separating the styles form t
     font-weight: bold;
   }
 ```
-### Tasks
+### Tasks :pencil2:
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/Naden/pen/NJaOzM)
 
-:pencil2: #### Task 1
+#### Task 1
 Change the color of the h1 element to red. (The h1 element can be found on line 29 with `display: inline-block` rule already present)
 
-:pencil2: #### Task 2
-Make another identical rule for h1 and set the color to blue. See that it overrides the existing rule above it. You should have two h1 rules at this point, :exclamation: this is not best-practise but only for illustrating how the cascade works.
+#### Task 2
+:pencil2: Make another identical rule for h1 and set the color to blue. See that it overrides the existing rule above it. You should have two h1 rules at this point, :exclamation: this is not best-practise but only for illustrating how the cascade works.
 
-:pencil2: #### Task 3
+#### Task 3
 Make another identical rule for h1 and set the color to blue. See that it overrides the existing rule above it. 
