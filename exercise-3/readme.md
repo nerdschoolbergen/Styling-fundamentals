@@ -1,18 +1,12 @@
 # Exercise 3 – Media queries and layouts
 
-:exclamation:
-:question:
-:pencil2:
-:book:
-
 You will learn about
-- Different techniques for creating page layouts
-- Ensuring that the box model properties are set correctly with regards to the layout we are trying to achieve
+- Layout using floats
 - Using media queries to alter layout configurations
-- Creating flexible layouts that mitigate some of the need for media queries
 
-## 2.1 Layout using floats
-:pencil2: [Open the starting point for this assignment on codepen](https://codepen.io/eivindmjelde/pen/PyBZwx?editors=1100)
+## Layout using floats
+:pencil2: [Open the starting point for this assignment on codepen](https://codepen.io/taranger/pen/JzvqEy)
+Solution can be found here [Float layout exercise solution](https://codepen.io/taranger/pen/WmJBRV)
 
 :book: Up until very recently, the main way of creating grid layouts (content separated into rows and columns) was done using floats. Today we have better ways of creating grids, but a lot of websites and applications (unfortunately) still rely on floats. This is usually in order to support legacy browsers, or because rewriting existing codebase is to expensive and/or time consuming. We will therefore spend a little time exploring some of the quirks of using floats for layout.
 
@@ -33,5 +27,3 @@ You will learn about
 :pencil2: In order to fix problem 1 we need to create a new [block formating context(BFC)](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) for our container. Try googling "CSS clearfix" in order to find to find a solution and implement it in CodePen.
 
 :pencil2: In order to fix problems 2 and 3 we need to adjust the `box-sizing` property of our elements ([reference](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)). Adjust box-sizing for elements in order to create the layout illustrated in the image above.
-
-## 2.2 Layouts using flexbox
