@@ -110,14 +110,33 @@ Explained in simple terms; elements can be said to be in normal flow when they a
 These two css properties come with the values `top`, `left`, `right` and `bottom`, indicating to where the out-of-flow element will attach to. `position: fixed` is placed at a fixed point in relation to the browser window, `position: absolute` will be placed in relation to the closes element with `position: relative`, if none is found then it will be in relation to the browser window. When this is the case there is a slight difference between the two, `position: fixed` will be hovering in the same place in the browser window while you scroll, while `position: absolute` will still disappear if you scroll past the relative parent.
 
 
-## :pencil2: Tasks
+## :pencil2: Box-model Tasks
 Remember to ask if you are stuck, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/taranger/pen/NJaOzM)
+In this exercise use the example code in this code pen: [Box-model Tasks](https://codepen.io/taranger/pen/moLWMB)
+Solution to the box-model tasks can be found here: [Box-model Tasks solution](https://codepen.io/taranger/pen/XGqVXL)
 
 #### Task 1
+Try giving the .item class a padding of 20px and see what happens. The span elements are displayed as inline by default, so when setting padding to 20px, the elements will flow outside of the container.
+
 #### Task 2
+Try and give the .item class a display property with the value inline-block and see what happens. The span elements will now take up more space because they are formatted as block elements while still being inline.
+
 #### Task 3
+To make the boxes look more fancy, lets make the width and height 100px, also add some space between them by adding a margin of 20px
+
 #### Task 4
-#### Task 5
-#### Task 6
-#### Task 7
+Lets add a border to the boxes, border properties are written in this format: `border: 1px solid black`. Try to make a 1px red solid border on the #container and a 2px white dashed border on the .item class.
+
+## :pencil2: Flexbox Tasks
+Remember to ask if you are stuck, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+In this exercise use the example code in this code pen: [Box-model Tasks](https://codepen.io/taranger/pen/moLWMB)
+Solution to the box-model tasks can be found here: [Box-model Tasks solution](https://codepen.io/taranger/pen/XGqVXL)
+
+#### Task 1
+Lets make the 
+
+#### Task 2
+
+#### Task 3
+
+#### Task 4
