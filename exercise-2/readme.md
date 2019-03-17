@@ -129,14 +129,24 @@ Lets add a border to the boxes, border properties are written in this format: `b
 
 ## :pencil2: Flexbox Tasks
 Remember to ask if you are stuck, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Box-model Tasks](https://codepen.io/taranger/pen/moLWMB)
-Solution to the box-model tasks can be found here: [Box-model Tasks solution](https://codepen.io/taranger/pen/XGqVXL)
+In this exercise use the example code in this code pen: [Flexbox Tasks](https://codepen.io/taranger/pen/OqZzWz)
+Solution to the Flexbox Tasks can be found here: [Flexbox Tasks solution](https://codepen.io/taranger/pen/xBjeLG)
+
+Open the flexbox tasks code pen and start by dragging the window divider in the middle of the screen to try and squeeze the boxes on the right. Or you can drag the whole browser window and see what happens. Since the container does not have the flex dispaly property, and the children elements have the inline-block display property, they will wrap to the next line when whe available space is gone.
 
 #### Task 1
-Lets make the 
+We want to make this container and its elements flex, so lets start by giving the html element with the class ".flex-container" a display property of "flex". squeeze the browser window as you just did but observe how the children behave 
 
 #### Task 2
+Flex-direction is now set to row, as it is default. Change the flex-direction on the flex-container to column but in a reverse order.
 
 #### Task 3
+Make it so that the flexing items are centered inside the flex container using the align-items property.
 
 #### Task 4
+Use justify-content property and find a value that makes it so that all the flex children have space between eachother.
+
+## :pencil2: Flow Tasks
+Remember to ask if you are stuck, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+In this exercise use the example code in this code pen: [Flexbox Tasks](https://codepen.io/taranger/pen/OqZzWz)
+Solution to the Flexbox Tasks can be found here: [Flexbox Tasks solution](https://codepen.io/taranger/pen/xBjeLG)
