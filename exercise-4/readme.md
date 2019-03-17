@@ -16,7 +16,7 @@ In this example code the background color of the body will change to red when th
 ```
 
 We can use this rule to our advantage when desiging webpages for mobile. We type whatever css rules we want in the media query that we want to override previous rules.
-In the example below you can see that we set the body width to 100% when the screen is 600px and below, this will make the body fill the entire width of the browserwindow. When the screen width is 601px minimum we set it to 800px and margin: 0px auto, making it so that it will be a set size of 800px and be centered in the window due to the margin rule.
+In the example below you can see that we set the body width to 100% when the screen is 600px and below, this will make the body fill the entire width of the browser window. When the screen width is 601px minimum we set it to 800px and margin: 0px auto, making it so that it will be a set size of 800px and be centered in the window due to the margin rule.
 
 
 ```css
