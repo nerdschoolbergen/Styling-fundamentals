@@ -1,5 +1,5 @@
 # Exercise 1 - The cascade, selectors, and specificity
-This exercise will focus on tackling one of the most common challenges of CSS: selector specificity and the cascade. Since CSS by nature has a global scope, understanding specificity is fundemnental in order to contol it.
+This exercise will focus on tackling one of the most common challenges of CSS: selector specificity and the cascade. Since CSS by nature has a global scope, understanding specificity is fundamental in order to contol it.
 
 ### The Cascade
 The "cascade" part of the name cascading style sheet is in itself pretty simple: the order in which CSS rules are declared matter. The rules defined last in a stylesheet take precedence over the ones defined earlier.
@@ -16,7 +16,7 @@ selector3 {
   color: blue;
 }
 ```
-If all these selectors would target the same element, it's text color would be blue since the declarations in `selector3` take precedence over the others.
+If all these selectors would target the same element, it's text color would be blue since the declarations in `selector3` take precedence over the others due to it being applied last.
 
 :exclamation: However, the type of selector you use can override the order in wich rules are specified.
 
@@ -30,14 +30,14 @@ In order to talk about selector specificity we should first talk about the main 
 - Style attribute
 
 ### Element
-An element selctor is the most basic form of selector. Its specified using the name of the corresponding HTML-element type you want to target, like `div`, `p`, `span`, `body` etc.
+An element selctor is the most basic form of selector. Its specified using the name of the corresponding HTML-element type you want to target, like `<div>`, `<p>`, `<span>`, `<body>` etc.
 ```css
 p {
   /* I target all paragraphs. But remember, I can be overwritten by declarations later in the style sheet */
 }
 ```
 ### Class
-A class selector is something that is applied to an HTML-element using the `class` attribute: `<div class="fancy-class">I have a class</div>`. We use the "dot"(`.`) notation to target them in CSS.
+A class selector is something that is applied to an HTML-element using the `class` attribute: `<div class="fancy-class">I have a class</div>`. We use the "dot"(`.`) notation to target them in CSS. Multiple elements can have the same class slector, this is useful so that we do not need to write the same rules for different elements.
 ```css
 .fancy-class {
   // I'm a class rule!
@@ -57,6 +57,10 @@ a:hover {
 
 .class:last-child {
   /* This will apply to the last element within a parent element with the class ".class" */
+}
+
+.class:nth-child(odd) {
+  /* This will apply to all odd child elements of a parent, useful for example to make zebra stripes on list items */
 }
 
 .class:not(.another-class) {
