@@ -18,7 +18,7 @@ selector3 {
 ```
 If all these selectors would target the same element, it's text color would be blue since the declarations in `selector3` take precedence over the others due to it being applied last.
 
-:exclamation: However, the type of selector you use can override the order in wich rules are specified.
+:exclamation: However, the type of selector you use can override the order in which rules are specified.
 
 In order to talk about selector specificity we should first talk about the main groups of selectors:
 
@@ -30,7 +30,7 @@ In order to talk about selector specificity we should first talk about the main 
 - Style attribute
 
 ### Element
-An element selctor is the most basic form of selector. Its specified using the name of the corresponding HTML-element type you want to target, like `<div>`, `<p>`, `<span>`, `<body>` etc.
+An element selctor is the most basic form of selector. Use the name of the corresponding HTML-element type you want to target, like `<div>`, `<p>`, `<span>`, `<body>` etc.
 ```css
 p {
   /* I target all paragraphs. But remember, I can be overwritten by declarations later in the style sheet */
