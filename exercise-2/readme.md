@@ -9,7 +9,7 @@ You will learn about:
 ## The Box model
 ![](images/box-model.png)
 
-The box model is a core concept of css, by understanding the box-model you will have a much easier time making layouts for webpages utilizing the different properties. The box model consists of content, padding, border, outline and the margin.
+The box model is a core concept of css which affects all HTML-elements that are displayed, by understanding the box-model you will have a much easier time making layouts for webpages utilizing the different properties. The box model consists of content, padding, border and the margin.
 
 ### Content 
 The inner layer that contains the contents of the target element. Content can consist of any type of HTML-element
