@@ -12,18 +12,18 @@ You will learn about:
 The box model is a core concept of css which affects all HTML-elements that are displayed, by understanding the box-model you will have a much easier time making layouts for webpages utilizing the different properties. The box model consists of content, padding, border and the margin.
 
 ### Content 
-The inner layer that contains the contents of the target element. Content can consist of any type of HTML-element
+The inner layer that contains the contents of the target element. Content can consist of any type of HTML-element.
 ### Padding
 Outside of the content layer is the padding. Adding space to the padding will give the visual effect of having white-space around the content.
-You can give a box a 10px padding by typing: `padding: 10px`. Padding can also be given specific values such as this `padding-top: 10px` `padding-left: 25px` or the shorthand vertical and hortizontal syntax which is written like this: `padding: 0px 10px`. Or like this `padding: 10px 10px 10px 10px` for top, right, bottom and left padding. It all depends on what you are used to.
+You can give a box a 10px padding by typing: `padding: 10px`. Padding can also be given specific values such as this `padding-top: 10px` `padding-left: 25px` or the shorthand vertical and hortizontal syntax which is written like this: `padding: 0px 10px`. Or like this `padding: 10px 10px 10px 10px` for top, right, bottom and left padding.
 ### Border
 The layer surrounding the padding layer. Many times this will have a small width of maybe only 1 pixel. Unlike the padding and margin layers, this layer can be given color and style. and example of a faint thin grey border could be written like this: `border: 1px solid lightgray`.
 ### Margin
-The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of pushing other close elements away with an invisible forcefield. Margins are written in the same style as padding. `margin-top: 10px`, or `margin: 15px 10px 20px 20px` for example.
+The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of pushing other close elements away with an invisible forcefield. Margins are written in the same style as padding. `margin-top: 10px`, or `margin: 15px 10px 20px 20px` for example. If two elements have the same margin of 20px that is pushing on eachother, they will overlap and the gap between them will only be 20px and not 40px.
 
 ## Display properties
 The display property plays an important role in CSS, it decides how an HTML-element will behave in relation to other elements.
-The most important display properties to learn are; none, inline, inline-block, block, flex and grid.
+The most important display properties to learn are; none, inline, inline-block, block and flex.
 For full details of display properties check out: [Display properties](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
 ### None
@@ -40,7 +40,7 @@ For full details of display properties check out: [Display properties](https://d
 ### block
 `display: block` The block element will take up all horizontal space in the parent container, it will allways start on a new line from previous elements and stretch to the end of what confines it
 
-### Flexbox
+### Flex
 Check out this overview for a more detailed explanation of flexbox: [Flexbox concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) Also [This pen by Gabi](https://codepen.io/enxaneta/full/adLPwv) is a good interactive guide to flexbox.
 Flexbox is a bit more complicated than the previous displays, putting `display: flex` on a container makes the children elements flex dynamically when the parent container is resized, essentially the elements are stretching and moving either in a row or in a column configuration, imagine a musician playing an accordion. The flex container can have 6 different properties:
 
