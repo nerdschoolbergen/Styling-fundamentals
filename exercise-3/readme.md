@@ -22,7 +22,7 @@ Solution can be found here [Float layout exercise solution](https://codepen.io/t
 :book: The reasons for this is the following:
 1. When we float elements they are taken out of content flow. This essentially means that to the parent container they do not exists and their height is therefore 0. This is probably the biggest drawback of using floats for layout purposes [More on information on content flow for the curious](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/In_Flow_and_Out_of_Flow).
 2. This is related to the CSS box model. There are two ways in which width and height of elements can be specified in CSS. Either an element's width and height is only calculated based on its content, or its a combination of content + padding + borders. [Reference on box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model).
-3. This is also related to the CSS box model. At this point the width of the main content (75%) and the sidebar (25%) is 100%. But because of how the box-sizing property is set (per default), this is in fact wider than the width of the element's container.
+3. This point is also related to the CSS box model. At this point the width of the main content (75%) and the sidebar (25%) is 100%. But because of how the box-sizing property is set (per default), this is in fact wider than the width of the element's container.
 
 :pencil2: In order to fix problem 1 we need to create a new [block formating context(BFC)](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) for our container. Try googling "CSS clearfix" in order to find to find a solution and implement it in CodePen.
 
