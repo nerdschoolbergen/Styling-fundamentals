@@ -1,8 +1,4 @@
-# Exercise 3 – Media queries and layouts
-
-You will learn about
-- Layout using floats
-- Using media queries to alter layout configurations
+# Exercise 3 – Layout using floats
 
 ## Layout using floats
 :pencil2: [Open the starting point for this assignment on codepen](https://codepen.io/taranger/pen/JzvqEy)

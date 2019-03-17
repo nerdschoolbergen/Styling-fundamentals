@@ -12,10 +12,10 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 * Although you have this README.md file on your computer it's easier to read it on GitHub, so we recommend you keep this page open with the exercise tasks.
 
 ## Exercises 
-[Exercise 1](exercise-1/readme.md)
+[Exercise 1 - The cascade, selectors, and specificity](exercise-1/readme.md)  
 
-[Exercise 2](exercise-2/readme.md)
+[Exercise 2 - Sizing and the box model](exercise-2/readme.md)
 
-[Exercise 3](exercise-3/readme.md)
+[Exercise 3 - Layout using floats](exercise-3/readme.md)
 
-[Exercise 4](exercise-4/readme.md)
+[Exercise 4 - Making it responsive with media queries](exercise-4/readme.md)
