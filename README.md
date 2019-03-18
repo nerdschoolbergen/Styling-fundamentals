@@ -15,4 +15,4 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 
 [Exercise 5 - Introduction to transform and transition](exercise-5/readme.md)
 
-[Presentation slides](http://tinyurl.com/stylingfundamentalslides)
+[Presentation slides](http://tinyurl.com/stylingfundamentals-slides)
