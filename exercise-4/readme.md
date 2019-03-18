@@ -40,19 +40,23 @@ Open the starting point for this assignment on codepen [Mediaqueries exercise](h
 Solution can be found here [Mediaqueries exercise solution](https://codepen.io/taranger/pen/vPjqbN)
 
 Open the mediaqueries exercise starting point code pen. Move the divider centered on the screen to stretch the boxes on the right. Observe how the boxes stretch and shrink. They still keep their position relative to eachother. For example the sidebar will still be placed on the same row as the main-content even if the window shrinks below 600px. So if this were to be viewet on a mobile or tablet, these two container would be crammed too much together.
+
 #### Task 1
-We want to make it so that on mobile, the containers take up the full width of the window. Write a mediaquery that is set to max width of 600px and sets the display property of .content to block instead of flex. Change the width of .main-content and .sidebar so that they take up full width in this mediaquery.
+We want to make it so that on mobile, the main-content and sidebar is stacked ontop of eachother instead of side by side. Write a mediaquery that is set to max width of 600px and sets the display property of .content to block instead of flex.
 
 #### Task 2
-Now the .main-content and .sidebar will fill 100% of the .container's width when the user is on a mobile phone or the screen is resized to 600px and below.
+Lets make the main-content and sidebar fill the whole width on mobile. Change the width of .main-content and .sidebar so that they take up full width in this mediaquery.
 
 #### Task 3
-Lets make some rules that apply for 900px and up. Set up another media query that affect this requirement. Now we want the font size of the article element to be 24px and the header element to be 40px.
+Now the .main-content and .sidebar will fill 100% of the .container's width when the user is on a mobile phone or the screen is resized to 600px and below.
 
 #### Task 4
-Now the page will be more suited to different screen sizes, making text larger when the screensize is larger. Lets assume that the footer is not needed when we are on mobile. Try to hide the footer when the screen is set to the first query you made; max width of 600px. See the section on display properties in [Exercise 2](exercise-2/readme.md) if you are usure what propery to use.
+Lets make some rules that apply for 900px and up. Set up another media query that affect this requirement. Now we want the font size of the article element to be 24px and the header element to be 40px.
 
 #### Task 5
+Now the page will be more suited to different screen sizes, making text larger when the screensize is larger. Lets assume that the footer is not needed when we are on mobile. Try to hide the footer when the screen is set to the first query you made; max width of 600px. See the section on display properties in [Exercise 2](exercise-2/readme.md) if you are usure what propery to use.
+
+#### Task 6
 Try to make sidebar and main-content switch places by changeing the flex-direction on the .container element, and also make it so the sidebar is aligned at the bottom of the .container instead of the top. 
 
 #### Bonus task - some html
