@@ -5,7 +5,7 @@ Transitions occurs when an element changes from one state to another. It has a s
 
 To use transitions we simply use the transition property:
 
-```
+```css
     a{
         color: #FF4136;
     }
@@ -20,7 +20,7 @@ The above transition begins on hover, and lasts until the element is not hovered
 
 You can also specify which properties should be affected by the transition. In the following example, the text will gradually change color, but change font-size immediately.
 
-```
+```css
     a{
         color: #FF4136;
         font-size: 12px;
@@ -59,7 +59,7 @@ Animations are more complex than transitions and offers more control. You can an
 
 When using animations you can change gradually change from one style to another. To use animations you first need to specify keyframes:
 
-```
+```css
 @keyframes name-of-animation{
     from {border-color: #FF4136}
     to{border-color: #001f3f}
@@ -68,7 +68,7 @@ When using animations you can change gradually change from one style to another.
 
 You then use the keyframes on the element you want to animate: 
 
-```
+```css
 .animated-element{
     animation-name: name-of-animation;
     animation-duration: 2s;
@@ -79,7 +79,7 @@ Animations have a lot of the same properties as transitions. For example ```anim
 
 By default the animation will run once when you load the page, but you could also run animation on for example hover: 
 
-```
+```css
 .animated-element:hover{
     animation-name: name-of-animation;
     animation-duration: 2s;
