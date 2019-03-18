@@ -1,6 +1,5 @@
 # Exercise 3 – Layout using floats
 
-## Layout using floats
 :pencil2: [Open the starting point for this assignment on codepen](https://codepen.io/taranger/pen/JzvqEy)
 Solution can be found here [Float layout exercise solution](https://codepen.io/taranger/pen/WmJBRV)
 
