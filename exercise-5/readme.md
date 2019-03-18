@@ -101,8 +101,8 @@ See more about CSS animations [here](https://developer.mozilla.org/en-US/docs/We
 
 ## :pencil2: Tasks
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/taranger/pen/LaBpGr)
-Solution can be found here: [Codepen example](https://codepen.io/taranger/pen/drjYGq)
+In this exercise use the example code in this code pen: [Animation example](https://codepen.io/taranger/pen/LaBpGr)
+Solution can be found here: [Animation solution](https://codepen.io/taranger/pen/drjYGq)
 
 #### Task 1
 Make it so that `#item1` element's background-color is changed to blue when you hover it.
