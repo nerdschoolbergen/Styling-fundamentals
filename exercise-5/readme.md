@@ -1,7 +1,7 @@
 # Exercise 5 - Transitions, transform and animations
 
 ## Transitions
-Transitions occurs when an element changes from one state to another. It has a set beginning and an end. Transitions are often used when hovering links or clicking buttons. 
+Transitions occur when an element changes from one state to another. It has a set beginning and an end. Transitions are often used when hovering links or clicking buttons. 
 
 To use transitions we simply use the transition property:
 
