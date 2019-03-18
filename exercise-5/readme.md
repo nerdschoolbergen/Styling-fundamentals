@@ -95,4 +95,14 @@ Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mo
 In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/taranger/pen/LaBpGr)
 Solution can be found here: [Codepen example](https://codepen.io/taranger/pen/drjYGq)
 
-####
+#### Task 1
+Make it so that `#item1` element's background-color is changed to blue when you hover it.
+
+#### Task 2
+Make it so that `#item2` element's width is set to 800px when hovered, also change the timing function to ease in and out.
+
+#### Task 3
+Make a new keyframe animation called ``spin`` it so that `#item3` element's width is set to 800px when hovered, also change the timing function to ease in and out.
+
+#### Task 4
+Make it so that `#item2` element's width is set to 800px when hovered, also change the timing function to ease in and out.
