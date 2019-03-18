@@ -48,15 +48,12 @@ We want to make it so that on mobile, the main-content and sidebar is stacked on
 Lets make the main-content and sidebar fill the whole width on mobile. Change the width of .main-content and .sidebar so that they take up full width in this mediaquery.
 
 #### Task 3
-Now the .main-content and .sidebar will fill 100% of the .container's width when the user is on a mobile phone or the screen is resized to 600px and below.
-
-#### Task 4
 Lets make some rules that apply for 900px and up. Set up another media query that affect this requirement. Now we want the font size of the article element to be 24px and the header element to be 40px.
 
-#### Task 5
+#### Task 4
 Now the page will be more suited to different screen sizes, making text larger when the screensize is larger. Lets assume that the footer is not needed when we are on mobile. Try to hide the footer when the screen is set to the first query you made; max width of 600px. See the section on display properties in [Exercise 2](exercise-2/readme.md) if you are usure what propery to use.
 
-#### Task 6
+#### Task 5
 Try to make sidebar and main-content switch places by changeing the flex-direction on the .container element, and also make it so the sidebar is aligned at the bottom of the .container instead of the top. 
 
 #### Bonus task - some html
