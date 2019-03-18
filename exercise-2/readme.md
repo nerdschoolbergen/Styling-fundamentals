@@ -55,7 +55,7 @@ Default flex-direction is set to "row", so if you want a collection of items to 
  }
 ```
 #### flex-wrap
-The default value for `flex-wrap` is set to no-wrap, this is so that items can behave as described above, like an accordion. Setting the value to wrap will make the HTML-elements "jump" to the next line if the parent container shrinks.
+The default value for `flex-wrap` is set to nowrap, this is so that items can behave as described above, like an accordion. Setting the value to wrap will make the HTML-elements "jump" to the next line if the parent container shrinks and there is not enough room for the children elements.
 
 #### flex-flow
 `flex-flow` is a shorthand property for setting both `flex-wrap` and `flex-direction`.
@@ -74,7 +74,7 @@ The default value for `flex-wrap` is set to no-wrap, this is so that items can b
 #### justify-content
 ![](images/justify-content.png)
 
-Using `justify-content` can control the justification inside the container of flexing items, and also white-space between flexing items and their parent container. The different values are; `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
+Using `justify-content` can control the justification inside the container of flexing items, and also white-space between flexing items and their parent container. The different values are: `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
 
 ```css 
  .main-content {
