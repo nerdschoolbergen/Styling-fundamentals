@@ -111,7 +111,7 @@ Make it so that `#item1` element's background-color is changed to blue when you 
 Make it so that `#item2` element's width is set to 800px when hovered, also change the timing function to ease in and out.
 
 #### Task 3
-Make a new keyframe animation called ``spin`` it should to from a rotate transform of 0 degrees to 90 degrees. Give it a duration of 2 seconds and iteration count of infinite.
+Make a new keyframe animation for `#item3` called ``spin`` it should start with a rotate transform of 0 degrees and end with 90 degrees. Give it a duration of 2 seconds and iteration count of infinite.
 
 #### Task 4
 Make a new keyframe animation called ``circle``. Give `#item4` a `border-radius` of 0% at the beginning of the animation, and end with a border-radius of 100%. Set iteration count to infinite if you want the animation to continously run.
