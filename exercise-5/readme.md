@@ -65,6 +65,15 @@ When using animations you can change gradually change from one style to another.
     to{border-color: #001f3f}
 }
 ```
+You can also make keyframes based on percentages: 
+```css
+    @keyframes name-of-animation {
+      0%   {left: 0px}
+      25%  {top: -200px;}
+      50%  {left: 400px;}
+      100% {left: 0px; top: 0px;}
+    }
+```
 
 You then use the keyframes on the element you want to animate: 
 
@@ -102,7 +111,11 @@ Make it so that `#item1` element's background-color is changed to blue when you 
 Make it so that `#item2` element's width is set to 800px when hovered, also change the timing function to ease in and out.
 
 #### Task 3
-Make a new keyframe animation called ``spin`` it so that `#item3` element's width is set to 800px when hovered, also change the timing function to ease in and out.
+Make a new keyframe animation called ``spin`` it should to from a rotate transform of 0 degrees to 90 degrees. Give it a duration of 2 seconds and iteration count of infinite.
 
 #### Task 4
-Make it so that `#item2` element's width is set to 800px when hovered, also change the timing function to ease in and out.
+Make a new keyframe animation called ``circle``. Give `#item4` a `border-radius` of 0% at the beginning of the animation, and end with a border-radius of 100%. Set iteration count to infinite if you want the animation to continously run.
+
+
+#### Task 5
+See if you can make `#item5` move in a triangle, by first setting `position: relative`, `top: 0px` `left: 0px` and then manipulating the item with keyframes, start the keyframes at 0% with values `top: 0px` `left: 0px`and end it at 100% with the same values so that it returns to the starting point. Remember that if you want the animation to continue forever you need to set `animation-iteration-count` to infinite
