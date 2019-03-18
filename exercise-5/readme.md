@@ -90,3 +90,9 @@ If you want to run an animation several times you could use ```animation-iterati
 
 See more about CSS animations [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
 
+## :pencil2: Tasks
+Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/taranger/pen/LaBpGr)
+Solution can be found here: [Codepen example](https://codepen.io/taranger/pen/drjYGq)
+
+####
