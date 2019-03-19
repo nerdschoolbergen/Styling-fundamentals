@@ -5,7 +5,7 @@ Job well done! Now you are through the basics. The next task is a bonus task and
 :star: [Open the starting point for this assignment at codepen](https://codepen.io/taranger/pen/GeBwWL).
 
 As you can see the starting point is a simple HTML page. I would recommend doing the following things before starting to write the CSS:
-1. Identify elements that can have the equal styling and give them the same class names
+1. Identify elements that could have similar styles and give them the same class names
 2. Give the rest of the elements descriptive class names. 
 
 Continue on with the layout. Use floats/flex as we have gone through, or if you want a new challenge take a look at using [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for the layout. Make sure your layout is responsive. 
