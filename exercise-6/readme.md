@@ -1,4 +1,4 @@
-# Exercise 6 - Make it pretty/functional
+# Exercise 6 - Freestyle
 
 Job well done! Now you are through the basics. The next task is a bonus task and it will require you to use all the basics you have learned up until now. 
 
