@@ -190,3 +190,5 @@ Target the `#content` id selector of the page and give it a background color usi
 
 #### Task 6
 Add a inline style attribute to the h1 header and add a property that puts the font-size at 50px;
+
+### [Go to exercise 2 :arrow_right:](../exercise-2/readme.md)

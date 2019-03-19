@@ -58,3 +58,5 @@ When the screensize is 601px and up, make sidebar and main-content switch places
 
 #### Bonus task - some html
 We want to make it so that if you are on a screensize of 400px and below the whole article element is not displayed, and also make a p element with an id "error" that is shown in place of the article that says "Your device is not suited to view this page". Make it so that it is not displayed by default and is only shown when the breakpoint of 400px is reached.
+
+### [Go to exercise 5 :arrow_right:](../exercise-5/readme.md)

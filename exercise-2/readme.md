@@ -164,3 +164,5 @@ Notice that when we scroll on the site, the chatbox does not follow us. We want 
 
 #### Task 4
 Now the box is fixed onto the browser window, change the position to the bottom right side instead.
+
+### [Go to exercise 3 :arrow_right:](../exercise-3/readme.md)
