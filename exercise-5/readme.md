@@ -119,3 +119,5 @@ Make a new keyframe animation called ``circle``. Give `#item4` a `border-radius`
 
 #### Task 5
 See if you can make `#item5` move in a triangle, by first setting `position: relative`, `top: 0px` `left: 0px` and then manipulating the item with keyframes, start the keyframes at 0% with values `top: 0px` `left: 0px`and end it at 100% with the same values so that it returns to the starting point. Remember that if you want the animation to continue forever you need to set `animation-iteration-count` to infinite
+
+### [Go to exercise 6 :arrow_right:](../exercise-6/readme.md)
