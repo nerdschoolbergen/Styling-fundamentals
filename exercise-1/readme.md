@@ -97,9 +97,9 @@ a[href*="https://"] {
 }
 ```
 ### Id
-The id selector are meant to target all HTML-elements that are unique. For the id tag to be considered valid by the browser the id must be unique to the specific element. An example of an element with a id tag: `<div id="unique-item">This item is unique</div>`
+The id selector are meant to target all HTML-elements that are unique. For the id tag to be considered valid by the browser the id must be unique to the whole HTML document. An example of an element with a id tag: `<div id="unique-item">This item is unique</div>`
 
-Elements that tends to have ids are main sections of webpages such as the header, main content or the footer. Other specific elements such as input fields may have unique id's so that javascript functions can target them.
+Elements that tend to have ids are main sections of webpages such as the header, main content or the footer. Other specific elements such as input fields may have unique id's so that javascript functions can target them.
 
 ```css
 button#submit {
@@ -110,7 +110,7 @@ button#submit {
   /* Targets all li elements that are children to an element with the id="menu" */
 }
 ```
-The Id tag is more specific than targeting a class or and element, and will overwrite previous styles applied to those elements.
+The Id tag is more specific than targeting a class or element, and will overwrite previous styles applied to those elements.
 In the example below the second css rule that points towars p elements with the id "red-text" will overrule the previous one and turn that specific element red, while all other p elements will be blue.
 
 ```css
@@ -133,7 +133,7 @@ When styling HTML-elements you do not necessarily need to have a stylesheet, you
   </div>
 ```
 
-The example above contains a div with two elements, separating the styles form the html would make the markup more readable:
+The example above contains a div with two elements "h1" and "p", separating the styles form the html would make the HTML more readable:
 
 ```html
   <div id="main-content">
@@ -155,8 +155,8 @@ The example above contains a div with two elements, separating the styles form t
 ```
 ## :pencil2: Tasks
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Codepen example](https://codepen.io/taranger/pen/NJaOzM)
-Solution can be found here: [Codepen example solution](https://codepen.io/taranger/pen/YgjyGd)
+In this exercise use the example code in this code pen: [Selector exercises](https://codepen.io/taranger/pen/NJaOzM)
+Solution can be found here: [Selector exercises solution](https://codepen.io/taranger/pen/YgjyGd)
 
 #### Task 1
 Change the color of the h1 element to red. (The h1 element can be found on line 29 with `display: inline-block` property already present)
