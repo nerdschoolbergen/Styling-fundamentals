@@ -1,0 +1,27 @@
+body {
+    margin: 0px auto;
+    padding-top: 30px;
+    font-family: helvetica, sans-serif;
+  }
+  
+  #flex-container {
+    height: 900px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .flex-item {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .even {
+    background-color: cadetblue;
+  }

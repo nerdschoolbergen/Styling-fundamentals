@@ -1,0 +1,25 @@
+body {
+    width: 700px;
+    margin: 0px auto;
+    padding-top: 30px;
+    font-family: helvetica, sans-serif;
+  }
+  
+  #container {
+    width: 700px;
+    height: 400px;
+    display: flex;
+    background-color: lightgray;
+    border: 1px solid red;
+  }
+  
+  .item {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    border: 2px dashed white;
+  }

@@ -1,0 +1,64 @@
+#animation {
+  width: 900px;
+  height: 900px;
+  background-color: lightskyblue;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  margin: 20px;
+  transition: 2s;
+}  
+
+
+#item1:hover {
+  transition: 2s;
+  background-color: blue;
+}
+
+#item2:hover {
+  transition: 2s ease-in-out;
+  width: 800px;
+}
+
+#item3 {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(90deg)}
+}
+
+#item4{
+  animation-name: circle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes circle {
+  0%   {border-radius: 0%;}
+  100% {border-radius: 100%;}
+}
+
+#item5 {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  animation-name: triangle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes triangle {
+  0%   {left: 0px; top: 0px;}
+  25%  {left: 300px; top: -200px;}
+  50%  {left: 300px; top: 200px;}
+  100% {left: 0px; top: 0px;}
+}

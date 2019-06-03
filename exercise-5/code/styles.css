@@ -1,0 +1,14 @@
+#animation {
+  width: 900px;
+  height: 900px;
+  background-color: lightskyblue;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  margin: 20px;
+}  
