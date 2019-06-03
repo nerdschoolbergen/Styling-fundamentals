@@ -1,25 +1,18 @@
-body {
-    margin: 0px auto;
-    padding-top: 30px;
-    font-family: helvetica, sans-serif;
-  }
-  
-  #flex-container {
-    height: 400px;
-    background-color: lightgray;
-    /* add more rules here */
-  }
-  
-  .flex-item {
-    background-color: purple;
-    color: white;
-    padding: 20px;
-    display: inline-block;
-    width: 200px;
-    height: 100px;
-    /* add more rules here */
-  }
-  
-  .even {
-    background-color: cadetblue;
-  }
+#flex-container {
+  height: 400px;
+  background-color: lightgray;
+  /* add more rules here */
+}
+
+.flex-item {
+  background-color: purple;
+  color: white;
+  padding: 20px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.even {
+  background-color: cadetblue;
+}

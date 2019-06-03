@@ -1,19 +1,12 @@
-body {
-    width: 700px;
-    margin: 0px auto;
-    padding-top: 30px;
-    font-family: helvetica, sans-serif;
-  }
-  
-  #container {
-    width: 700px;
-    height: 400px;
-    background-color: lightgray;
-     /* add more rules here */
-  }
-  
-  .item {
-    background-color: purple;
-    color: white;
+#container {
+  width: 700px;
+  height: 400px;
+  background-color: lightgray;
     /* add more rules here */
-  }
+}
+
+.item {
+  background-color: purple;
+  color: white;
+  /* add more rules here */
+}

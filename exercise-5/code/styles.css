@@ -1,7 +1,7 @@
 #animation {
-  width: 900px;
+  width: 100%;
   height: 900px;
-  background-color: lightskyblue;
+  background-color: lightgray;
   margin: 0 auto;
   padding: 20px;
 }
@@ -9,6 +9,6 @@
 .block {
   width: 100px;
   height: 100px;
-  background-color: crimson;
+  background-color: #ff6400;
   margin: 20px;
 }  

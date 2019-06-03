@@ -1,75 +1,73 @@
-
- 
 article {
-    margin: 0 auto;
-    padding: 20px 15px;
-    max-width: 800px;
-    background: cornflowerblue;
-    box-sizing: border-box;
-  }
-  
-  .inline-block {
-    text-align: center;
-    padding: 10px;
-    display: inline-block;
-    box-sizing: border-box;
-  }
-  
+  margin: 0 auto;
+  padding: 20px 15px;
+  max-width: 800px;
+  background: cornflowerblue;
+  box-sizing: border-box;
+}
+
+.inline-block {
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.header {
+  background: antiquewhite;
+  width: 100%;
+}
+
+.main-content {
+  height: 200px;
+  background: lightgreen;
+  width: 70%
+}
+
+.sidebar {
+  height: 100px;
+  background: cyan;
+  width: 30%;
+}
+
+.footer {
+  background: plum;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
   .container {
-    display: flex;
-  }
+    display: block;
+  } 
   
-  .header {
-    background: antiquewhite;
+  .main-content {
+    width: 100%;
+  }
+
+  .sidebar {
     width: 100%;
   }
   
-  .main-content {
-    height: 200px;
-    background: lightgreen;
-    width: 70%
-  }
-  
-  .sidebar {
-    height: 100px;
-    background: cyan;
-    width: 30%;
-  }
-  
   .footer {
-    background: plum;
-    padding: 20px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+    article {
+    font-size: 24px;
+  } 
+  
+  .header { 
+    font-size: 40px;
   }
   
-  @media only screen and (max-width: 600px) {
-    .container {
-      display: block;
-    } 
-    
-    .main-content {
-      width: 100%;
-    }
-  
-    .sidebar {
-      width: 100%;
-    }
-    
-    .footer {
-      display: none;
-    }
+  .container {
+    flex-direction: row-reverse;
+    align-items: flex-end;
   }
-  
-  @media only screen and (min-width: 900px) {
-     article {
-      font-size: 24px;
-    } 
-    
-    .header { 
-      font-size: 40px;
-    }
-    
-    .container {
-      flex-direction: row-reverse;
-      align-items: flex-end;
-    }
-  }
+}
