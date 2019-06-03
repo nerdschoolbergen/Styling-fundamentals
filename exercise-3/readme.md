@@ -74,7 +74,7 @@ Solution can be found here [Float layout exercise solution](https://codepen.io/t
 
 :exclamation: The following image illustrates the wanted layout for this assignment.
 
-![](1-1.png)
+![](images/1-1.png)
 
 :book: If we compare the image with the starting point on Codepen we see that there are a few things that are off.
 1. The height of the parent container is much smaller than its content
