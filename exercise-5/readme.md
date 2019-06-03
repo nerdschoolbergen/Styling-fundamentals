@@ -57,7 +57,7 @@ To specify the curve you need to set the ```transition-timing-function``` proper
 ## Animations
 Animations are more complex than transitions and offers more control. You can animate most HTML elements with CSS animations instead of using JavaScript.
 
-When using animations you can change gradually change from one style to another. To use animations you first need to specify keyframes:
+When using animations you can change gradually from one style to another. To use animations you first need to specify keyframes:
 
 ```css
 @keyframes name-of-animation {
