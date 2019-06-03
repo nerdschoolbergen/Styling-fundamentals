@@ -32,7 +32,7 @@ For full details of display properties check out: [Display properties](https://d
 :exclamation: A similar rule is `visibility: hidden`, it will hide items but not affect their presence in document, making the items still push on eachother while being invisible.
 
 ### inline
-`display: inline` will make an element behave as an inline element (like <span>). Any height and width properties will have no effect to it. Text and icons are common uses for display: inline.
+`display: inline` will make an element behave as an inline element (like `<span>`). Any height and width properties will have no effect to it. Text and icons are common uses for display: inline.
 
 ### inline-block
 `display: inline-block` will make an element display as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values. Uses for inline-block can be pretty much anything that you want to not take up all available space and control the size of.
