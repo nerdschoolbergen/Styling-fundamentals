@@ -9,7 +9,7 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 
 [Exercise 2 - Sizing and the box model](exercise-2/readme.md)
 
-[Exercise 3 - Layout using floats](exercise-3/readme.md)
+[Exercise 3 - Layout using flex box and floats](exercise-3/readme.md)
 
 [Exercise 4 - Making it responsive with media queries](exercise-4/readme.md)
 
