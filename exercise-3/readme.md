@@ -66,7 +66,7 @@ Using `justify-content` can control the justification inside the container of fl
 `align-content` aligns the flex-lines within the flex container when there is extra space in the cross-axis. This rule is only applied when you have a flex container with multiple lines of flexing items.
 
 
-## Floats
+## :star: Floats
 :pencil2: [Open the starting point for this assignment on codepen](https://codepen.io/taranger/pen/JzvqEy)
 Solution can be found here [Float layout exercise solution](https://codepen.io/taranger/pen/WmJBRV)
 
