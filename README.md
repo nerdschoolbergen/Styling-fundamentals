@@ -17,8 +17,6 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 
 [Exercise 6 - Freestyle](exercise-6/readme.md)
 
-[Presentation slides](http://tinyurl.com/stylingfundamentals-slides)
-
 #### Icons with special meaning
 
 - :pencil2: - A task you should do
