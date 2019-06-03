@@ -47,7 +47,7 @@ You can set a delay on the transitions by using transition delay:
 ```
 
 The speed curve of the transition can also be specified:
-![Transition curves](5-1.png)
+![Transition curves](images/5-1.png)
 [Image source](https://developer.tizen.org/community/tip-tech/working-css3-transitions)
 
 To see an example of how this in action, check out [w3schools](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed). 
