@@ -17,6 +17,15 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 
 [Exercise 6 - Freestyle](exercise-6/readme.md)
 
+## Nice to have links
+
+[CSS Properties overview (W3Schools)](https://www.w3schools.com/cssref/default.asp)
+
+[Flexboxfroggy - a game to learn flexbox](https://flexboxfroggy.com/)
+
+[A Complete Guide to Flexbox (CSS-tricks.com)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+
 #### Icons with special meaning
 
 - :pencil2: - A task you should do
