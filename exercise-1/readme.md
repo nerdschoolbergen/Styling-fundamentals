@@ -37,10 +37,14 @@ p {
 }
 ```
 ### Class
-A class selector is something that is applied to an HTML-element using the `class` attribute: `<div class="fancy-class">I have a class</div>`. We use the "dot"(`.`) notation to target them in CSS. Multiple elements can have the same class slector, this is useful so that we do not need to write the same rules for different elements.
+A class selector is something that is applied to an HTML-element using the `class` attribute: `<div class="fancy-class">I have a class</div>`. We use the "dot"(`.`) notation to target them in CSS. Different types of elements (<p>, <h1>, <div> etc..) can have the same class slector, this is useful so that we can apply general styles to these elements cutting down the amount of css needed.
 ```css
 .fancy-class {
   // I'm a class rule!
+}
+
+.blue-background {
+  background-color: blue; // I'm a class that makes all elements that utilize me have a blue background color!
 }
 ```
 ### Pseudo class
