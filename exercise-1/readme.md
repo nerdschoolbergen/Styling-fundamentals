@@ -132,7 +132,7 @@ When styling HTML-elements you do not necessarily need to have a stylesheet, you
 
 ```html
   <div id="main-content">
-    <h1 style="font-size: 64px; text-decoration: underline">Underlined title element with font size of 64px</h1>
+    <h1 style="font-size: 64px; text-decoration: underline;">Underlined title element with font size of 64px</h1>
     <p style="color: red; font-weight: bold">A paragraph that is colored red and have font weight bold.</p>
   </div>
 ```
@@ -163,7 +163,7 @@ In this exercise use the example code in this code pen: [Selector exercises](htt
 Solution can be found here: [Selector exercises solution](https://codepen.io/taranger/pen/YgjyGd)
 
 #### Task 1
-Change the color of the h1 element to red. (The h1 element can be found on line 29 with `display: inline-block` property already present)
+Change the color of the h1 element to red. (The h1 selector in the css can be found on line 29 with `display: inline-block` property already present)
 
 ```css
   h1 {
