@@ -59,17 +59,17 @@ a:hover {
   /* This will apply to all links that are hovered */
 }
 
-.class:last-child {
-  /* This will apply to the last element within a parent element with the class ".class" */
+.header:last-child {
+  /* This will apply to the last element within a parent element with the class name ".header" */
 }
 
-.class:nth-child(odd) {
+.header:nth-child(odd) {
   /* This will apply to all odd child elements of a parent, useful for example to make zebra stripes on list items */
 }
 
-.class:not(.another-class) {
-  /* This rule will only apply to an element with the class ".class" if it does NOT also 
-     have the class ".another-class" */
+.header:not(.footer) {
+  /* This rule will only apply to an element with the class ".header" if it does NOT also 
+     have the class ".footer" */
 }
 ```
 [Handy reference of all available pseudo classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
