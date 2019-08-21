@@ -128,7 +128,7 @@ To make the boxes look more fancy, lets make the width and height 100px, also ad
 Lets add a border to the boxes, border properties are written in this format: `border: 1px solid black`. Try to make a 1px red solid border on the #container and a 2px white dashed border on the .item class.
 
 ## :pencil2: Flexbox Tasks
-Remember to ask if you are stuck, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+Remember to ask if you are stuck [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 In this exercise use the example code in this code pen: [Flexbox Tasks](https://codepen.io/taranger/pen/OqZzWz)
 Solution to the Flexbox Tasks can be found here: [Flexbox Tasks solution](https://codepen.io/taranger/pen/xBjeLG)
 
@@ -147,7 +147,7 @@ Make it so that the flexing items are centered inside the flex container using t
 Use justify-content property and find a value that makes it so that all the flex children have space between eachother.
 
 ## :pencil2: Flow Tasks
-Remember to ask if you are stuck, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+Remember to ask if you are stuck [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 In this exercise use the example code in this code pen: [Flow Tasks](https://codepen.io/taranger/pen/QorPXP)
 Solution to the Flow Tasks can be found here: [Flow Tasks solution](https://codepen.io/taranger/pen/oVdRXG)
 
