@@ -164,6 +164,6 @@ position the chatbox 10 pixels from the top and 5 pixels from the left. The box 
 Notice that when we scroll on the site, the chatbox does not follow us. We want it to follow us while we scroll. Make it into a fixed position instead.
 
 #### Task 4
-Now the box is fixed onto the browser window, change the position to the bottom right side instead.
+Now the box is fixed onto the browser window, position the chatbox so that it is located in the bottom right corner.
 
 ### [Go to exercise 3 :arrow_right:](../exercise-3/readme.md)
