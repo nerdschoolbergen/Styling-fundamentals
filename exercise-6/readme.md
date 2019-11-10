@@ -1,4 +1,4 @@
-# Exercise 3 – Layout using floats
+# Exercise 6 – Layout using floats
 
 :exclamation: In this exercise edit the code in this editor: [Layout using floats](https://codepen.io/taranger/pen/JzvqEy)
 Solution can be found here [Float layout exercise solution](https://codepen.io/taranger/pen/WmJBRV)
