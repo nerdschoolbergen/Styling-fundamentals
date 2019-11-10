@@ -159,8 +159,8 @@ This means we can use css to rearrange the order of the children without changin
 
 ## :pencil2: Task 1 - Grid layout
 
-:exclamation: In this exercise edit the code in this editor: [Grid task](https://codepen.io/grynag/pen/XWWBWww)
-Solution can be found here: [Grid task 1 solution](https://codepen.io/grynag/pen/abbjzYZ)
+:exclamation: In this exercise edit the code in this editor: [Grid task](https://codepen.io/grynag/pen/XWWBWww)  
+Solution can be found here: [Grid task 1 solution](https://codepen.io/grynag/pen/abbjzYZ)  
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 ### Task 1.1 Name all areas

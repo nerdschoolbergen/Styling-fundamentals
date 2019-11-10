@@ -36,7 +36,7 @@ There are a number of different breakpoint configurations that is possible, it a
 
 ## :pencil2: Media queries Tasks
 
-:exclamation: In this exercise edit the code in this editor: [Mediaqueries exercise](https://codepen.io/taranger/pen/dreBay).
+:exclamation: In this exercise edit the code in this editor: [Mediaqueries exercise](https://codepen.io/taranger/pen/dreBay).  
 Solution can be found here [Mediaqueries exercise solution](https://codepen.io/taranger/pen/vPjqbN)
 
 Open the mediaqueries exercise starting point code pen. Move the divider centered on the screen to stretch the webpage. Observe how the elements stretch and shrink. They still keep their position relative to eachother. For example the sidebar will still be placed on the same row as the main-content even if the window shrinks below 600px. So if this were to be viewed on a mobile or tablet, these two containers would be too crammed with content.

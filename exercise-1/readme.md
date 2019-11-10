@@ -158,8 +158,8 @@ The example above contains a div with two elements "h1" and "p", separating the 
   }
 ```
 ## :pencil2: Tasks
-:exclamation: In this exercise edit the code in this editor: [Selector exercises](https://codepen.io/taranger/pen/NJaOzM) 
-Solution can be found here: [Selector exercises solution](https://codepen.io/taranger/pen/YgjyGd)
+:exclamation: In this exercise edit the code in this editor: [Selector exercises](https://codepen.io/taranger/pen/NJaOzM)     
+Solution can be found here: [Selector exercises solution](https://codepen.io/taranger/pen/YgjyGd)  
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 #### Task 1

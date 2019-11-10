@@ -1,6 +1,6 @@
 # Exercise 6 – Layout using floats
 
-:exclamation: In this exercise edit the code in this editor: [Layout using floats](https://codepen.io/taranger/pen/JzvqEy)
+:exclamation: In this exercise edit the code in this editor: [Layout using floats](https://codepen.io/taranger/pen/JzvqEy)  
 Solution can be found here [Float layout exercise solution](https://codepen.io/taranger/pen/WmJBRV)
 
 :book: Up until very recently, the main way of creating grid layouts (content separated into rows and columns) was done using floats. Today we have better ways of creating grids, but a lot of websites and applications (unfortunately) still rely on floats. This is usually in order to support legacy browsers, or because rewriting existing codebase is to expensive and/or time consuming. We will therefore spend a little time exploring some of the quirks of using floats for layout.
