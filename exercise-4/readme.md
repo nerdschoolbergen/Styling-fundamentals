@@ -43,7 +43,7 @@ Open the mediaqueries exercise starting point code pen. Move the divider centere
 
 #### Task 1
 
-We want to make it so that on mobile, the main-content and sidebar is stacked ontop of eachother instead of side by side. Write a mediaquery that is set to max width of 600px and inside of it set the display property of .content to block instead of flex.
+We want to make it so that on mobile, the main-content and sidebar is stacked ontop of eachother instead of side by side. Write a mediaquery that is set to max width of 600px and inside of it set the display property of .container to block instead of flex.
 
 #### Task 2
 
