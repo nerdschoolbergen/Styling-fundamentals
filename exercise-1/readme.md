@@ -158,9 +158,9 @@ The example above contains a div with two elements "h1" and "p", separating the 
   }
 ```
 ## :pencil2: Tasks
-Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Selector exercises](https://codepen.io/taranger/pen/NJaOzM)
+:exclamation: In this exercise edit the code in this editor: [Selector exercises](https://codepen.io/taranger/pen/NJaOzM) 
 Solution can be found here: [Selector exercises solution](https://codepen.io/taranger/pen/YgjyGd)
+Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 #### Task 1
 Change the color of the h1 element to red. (The h1 selector in the css can be found on line 29 with `display: inline-block` property already present)
@@ -187,7 +187,7 @@ Notice that all images in the HTML have a class "image", create a new css rule f
 
 #### Task 4
 Make it so when you hover the checkboxes `<input>`, the cursor changes to a pointer, if you are unsure read the section on pseudo classes above.
-You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute `type="checkbox"`. 
+You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute `[type="checkbox"]`. 
 
 #### Task 5
 Target the `#content` id selector of the page and give it a background color using the value "#c3e4d6", and a padding of 20px;
