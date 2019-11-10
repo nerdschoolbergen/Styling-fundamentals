@@ -18,8 +18,26 @@ Outside of the content layer is the padding. Adding space to the padding will gi
 You can give a box a 10px padding by typing: `padding: 10px`. Padding can also be given specific values such as this `padding-top: 10px` `padding-left: 25px` or the shorthand vertical and hortizontal syntax which is written like this: `padding: 0px 10px`. Or like this `padding: 10px 10px 10px 10px` for top, right, bottom and left padding.
 ### Border
 The layer surrounding the padding layer. Many times this will have a small width of maybe only 1 pixel. Unlike the padding and margin, this property can be given color and style. and example of a faint thin grey border could be written like this: `border: 1px solid lightgray;`.
+
 ### Margin
 The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of pushing other close elements away with an invisible forcefield. Margins are written in the same style as padding. `margin-top: 10px`, or `margin: 15px 10px 20px 20px` for example. If two elements have the same margin of 20px that is pushing on eachother, they will overlap and the gap between them will only be 20px and not 40px.
+
+## :pencil2: Box model Tasks
+:exclamation: In this exercise edit the code in this editor: [Box model Tasks](https://codepen.io/taranger/pen/moLWMB)
+Solution to the box model tasks can be found here: [Box model Tasks solution](https://codepen.io/taranger/pen/XGqVXL)
+Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+
+#### Task 1
+Try giving the .item class a padding of 20px and see what happens. The span elements are displayed as inline by default, so when setting padding to 20px, the elements will flow outside of the container.
+
+#### Task 2
+Try and give the .item class a display property with the value inline-block and see what happens. The span elements will now take up more space because they are formatted as block elements while still being inline.
+
+#### Task 3
+To make the boxes look more fancy, lets make the width and height 100px, also add some space between them by adding a margin of 20px
+
+#### Task 4
+Lets add a border to the boxes, border properties are written in this format: `border: 1px solid black`. Try to make a 1px red solid border on the #container and a 2px white dashed border on the .item class.
 
 ## Display properties
 The display property plays an important role in CSS, it decides how an HTML-element will behave in relation to other elements.
@@ -40,7 +58,7 @@ For full details of display properties check out: [Display properties](https://d
 ### block
 `display: block` The block element will take up all horizontal space in the parent container, it will allways start on a new line from previous elements and stretch to the end of what confines it
 
-### Flex
+### flex
 Check out this overview for a more detailed explanation of flexbox: [Flexbox concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) Also [This pen by Gabi](https://codepen.io/enxaneta/full/adLPwv) is a good interactive guide to flexbox.
 Flexbox is a bit more complicated than the previous displays, putting `display: flex` on a container makes the children elements flex dynamically when the parent container is resized. The elements are stretching and moving either in a row or in a column configuration, imagine a musician playing an accordion. The flex container can have 6 different properties:
 
@@ -104,33 +122,11 @@ Using `justify-content` can control the justification inside the container of fl
 
 `align-content` aligns the flex-lines within the flex container when there is extra space in the cross-axis. This rule is only applied when you have a flex container with multiple lines of flexing items.
 
-## Flow
-Explained in simple terms; elements can be said to be in normal flow when they appear on the page in the order that they are in the source. Things get interesting however when we take items out of normal flow. Using css rules such as `position: absolute` and `position: fixed` will take an element out of the flow, and the remaining elements will behave as if the out-of-flow element is not present. 
-
-These two css properties come with the values `top`, `left`, `right` and `bottom`, indicating to where the out-of-flow element will attach to. `position: fixed` is placed at a fixed point in relation to the browser window, `position: absolute` will be placed in relation to the closes element with `position: relative`, if none is found then it will be in relation to the browser window. When this is the case there is a slight difference between the two, `position: fixed` will be hovering in the same place in the browser window while you scroll, while `position: absolute` will still disappear if you scroll past the relative parent.
-
-
-## :pencil2: Box model Tasks
-Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Box model Tasks](https://codepen.io/taranger/pen/moLWMB)
-Solution to the box model tasks can be found here: [Box model Tasks solution](https://codepen.io/taranger/pen/XGqVXL)
-
-#### Task 1
-Try giving the .item class a padding of 20px and see what happens. The span elements are displayed as inline by default, so when setting padding to 20px, the elements will flow outside of the container.
-
-#### Task 2
-Try and give the .item class a display property with the value inline-block and see what happens. The span elements will now take up more space because they are formatted as block elements while still being inline.
-
-#### Task 3
-To make the boxes look more fancy, lets make the width and height 100px, also add some space between them by adding a margin of 20px
-
-#### Task 4
-Lets add a border to the boxes, border properties are written in this format: `border: 1px solid black`. Try to make a 1px red solid border on the #container and a 2px white dashed border on the .item class.
 
 ## :pencil2: Flexbox Tasks
-Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Flexbox Tasks](https://codepen.io/taranger/pen/OqZzWz)
+:exclamation: In this exercise edit the code in this editor: [Flexbox Tasks](https://codepen.io/taranger/pen/OqZzWz)
 Solution to the Flexbox Tasks can be found here: [Flexbox Tasks solution](https://codepen.io/taranger/pen/xBjeLG)
+Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 Open the flexbox tasks code pen and start by dragging the window divider in the middle of the screen to try and squeeze the boxes on the right. Or you can drag the whole browser window and see what happens. Since the container does not have the flex dispaly property, and the children elements have the inline-block display property, they will wrap to the next line when whe available space is gone.
 
@@ -146,10 +142,17 @@ Make it so that the flexing items are centered inside the flex container using t
 #### Task 4
 Use justify-content property and find a value that makes it so that all the flex children have space between eachother.
 
+## Flow
+Explained in simple terms; elements can be said to be in normal flow when they appear on the page in the order that they are in the source. Things get interesting however when we take items out of normal flow. Using css rules such as `position: absolute` and `position: fixed` will take an element out of the flow, and the remaining elements will behave as if the out-of-flow element is not present. 
+
+These two css properties come with the values `top`, `left`, `right` and `bottom`, indicating to where the out-of-flow element will attach to. `position: fixed` is placed at a fixed point in relation to the browser window, `position: absolute` will be placed in relation to the closes element with `position: relative`, if none is found then it will be in relation to the browser window. When this is the case there is a slight difference between the two, `position: fixed` will be hovering in the same place in the browser window while you scroll, while `position: absolute` will still disappear if you scroll past the relative parent.
+
+
+
 ## :pencil2: Flow Tasks
-Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Flow Tasks](https://codepen.io/taranger/pen/QorPXP)
+:exclamation: In this exercise edit the code in this editor: [Flow Tasks](https://codepen.io/taranger/pen/QorPXP)
 Solution to the Flow Tasks can be found here: [Flow Tasks solution](https://codepen.io/taranger/pen/oVdRXG)
+Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 In this task we have a chatbox that is placed together with the rest of the content on the site, we want it to be placed outside of the content and be available while browsing the site.
 

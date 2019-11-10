@@ -101,9 +101,9 @@ If you want to run an animation several times you could use ```animation-iterati
 See more about CSS animations [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
 
 ## :pencil2: Tasks
-Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
-In this exercise use the example code in this code pen: [Animation example](https://codepen.io/taranger/pen/LaBpGr)
+:exclamation: In this exercise edit the code in this editor:: [Animation example](https://codepen.io/taranger/pen/LaBpGr)
 Solution can be found here: [Animation solution](https://codepen.io/taranger/pen/drjYGq)
+Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 #### Task 1
 Make it so that `#item1` element's background-color is changed to blue when you hover it.

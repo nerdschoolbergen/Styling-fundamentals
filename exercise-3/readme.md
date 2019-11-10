@@ -1,26 +1,210 @@
-# Exercise 3 – Layout using floats
+# Exercise 3 - Layout using grid
 
-:pencil2: [Open the starting point for this assignment on codepen](https://codepen.io/taranger/pen/JzvqEy)
-Solution can be found here [Float layout exercise solution](https://codepen.io/taranger/pen/WmJBRV)
+The grid layout property is a grid-based layout system in which you can use columns and rows to define webpages instead of having to use floats and positioning.
 
-:book: Up until very recently, the main way of creating grid layouts (content separated into rows and columns) was done using floats. Today we have better ways of creating grids, but a lot of websites and applications (unfortunately) still rely on floats. This is usually in order to support legacy browsers, or because rewriting existing codebase is to expensive and/or time consuming. We will therefore spend a little time exploring some of the quirks of using floats for layout.
+Grids are a fairly new css property, but is now possible to use in the most up to date browsers (Chrome, Firefox, Safari and Edge). Internet Explorer only has partial support so if you are designing a website that needs to work i IE you need to be careful using the new grid properties. [Can I use](https://caniuse.com/) offers an overview of the support:
 
-:exclamation: The following image illustrates the wanted layout for this assignment.
+<a href="http://caniuse.com/#feat=css-grid">
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/image/css-grid.webp">
+<img src="https://caniuse.bitsofco.de/image/css-grid.png" alt="Data on support for the css-grid feature across the major browsers from caniuse.com">
+</picture>
+</a>
 
-![](1-1.png)
+A grid layout consists of one parent element where the `display: grid` needs to be set. It will then affect all immediate children of the parent:
 
-:book: If we compare the image with the starting point on Codepen we see that there are a few things that are off.
-1. The height of the parent container is much smaller than its content
-2. The child containers are misaligned and overflow the parent container
-3. The main content and sidebar do not align on a row
+```html
+<div class="grid-parent">
+  <div class="grid-child">Child 1</div>
+  <div class="grid-child">Child 2</div>
+  <div class="grid-child">Child 3</div>
+  <div class="grid-child">Child 4</div>
+  <div class="grid-child">Child 5</div>
+  <div class="grid-child">Child 6</div>
+</div>
+```
 
-:book: The reasons for this is the following:
-1. When we float elements they are taken out of content flow. This essentially means that to the parent container they do not exists and their height is therefore 0. This is probably the biggest drawback of using floats for layout purposes [More on information on content flow for the curious](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/In_Flow_and_Out_of_Flow).
-2. This is related to the CSS box model. There are two ways in which width and height of elements can be specified in CSS. Either an element's width and height is only calculated based on its content, or its a combination of content + padding + borders. [Reference on box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model).
-3. This point is also related to the CSS box model. At this point the width of the main content (75%) and the sidebar (25%) is 100%. But because of how the box-sizing property is set (per default), this is in fact wider than the width of the element's container.
+With some grid styling:
 
-:pencil2: In order to fix problem 1 we need to create a new [block formating context(BFC)](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) for our container. Try googling "CSS clearfix" in order to find to find a solution and implement it in CodePen.
+```css
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: dodgerblue;
+  padding: 10px;
+  gap: 10px;
+}
 
-:pencil2: In order to fix problems 2 and 3 we need to adjust the `box-sizing` property of our elements ([reference](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)). Adjust box-sizing for elements in order to create the layout illustrated in the image above.
+.grid-child {
+  background: white;
+  text-align: center;
+  padding: 20px;
+}
+```
 
-### [Go to exercise 4 :arrow_right:](../exercise-4/readme.md)
+It will look like this:
+![grid](images/grid.jpg)
+
+:exclamation: Only immediate children will be a part of the grid.
+
+```html
+<div class="grid-parent">
+  <div class="grid-child">Child 1</div>
+  <div class="grid-child">Child 2</div>
+  <div class="grid-child">
+    Child 3
+    <div class="not-a-grid-child">Not a grid-child</div>
+  </div>
+  <div class="grid-child">Child 4</div>
+  <div class="grid-child">Child 5</div>
+  <div class="grid-child">Child 6</div>
+</div>
+```
+
+![grid](images/grid-not-child.jpg)
+
+Note that the "Not a grid-child" is placed inside the child 3 grid-item, and does not get affected by the `display: grid`.
+
+## Grid template
+
+As you might have noticed in the grid-css earlier there is more grid-properties than just `display: grid` and `grid-template` is one of them.
+
+### Grid-template-columns
+
+With `grid-template-columns` you define the size of each grid column. In the css above `repeat(3, 1fr)` means that there will be 3 columns per row where each grid-child gets 1/3 of the available space.
+
+You can use a range of different sizing options when defining template columns e.g:
+
+```css
+grid-template-columns: 100px 1fr 50% min-content max-content;
+```
+
+![grid](images/sizing.jpg)
+
+- 100px is a set pixel value
+- 1fr is a fraction unit
+- 50% is a percentage size based on the witdh of the parent
+- min-content is the minimum size the element needs to not to cause overflow
+- max-content is the elements ideal size given infinite available space
+
+### Grid-template-rows
+
+`grid-template-rows` works in the same way as columns.
+
+### Grid-template-area
+
+`grid-template-areas` gives us a way to name each area in our grid layout. Notice the `grid-template-area` property on the parent and the `grid-area` on child elements:
+
+```html
+<div class="grid-parent">
+  <div class="grid-child grid-child-1">1</div>
+  <div class="grid-child grid-child-2">2</div>
+  <div class="grid-child grid-child-3">3</div>
+  <div class="grid-child grid-child-4">4</div>
+</div>
+```
+
+```css
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "one two"
+    "three four";
+  background-color: dodgerblue;
+  padding: 10px;
+  gap: 10px;
+}
+
+.grid-child {
+  background: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.grid-child-1 {
+  grid-area: one;
+}
+
+.grid-child-2 {
+  grid-area: two;
+}
+
+.grid-child-3 {
+  grid-area: three;
+}
+
+.grid-child-4 {
+  grid-area: four;
+}
+```
+
+![grid](images/grid-area-1.jpg).
+
+Here each child has gotten it's own grid-area name and the parent can use these names in the `grid-template-area` to set them up. By changing that property you can change the entire layout:
+
+```css
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas:
+  "one one three"
+  "two four four";
+```
+
+Will give the following layout:
+![grid](images/grid-area-51.jpg).
+
+This means we can use css to rearrange the order of the children without changing the HTML! This is especially useful if you need to change your layout on smaller devices.
+
+## :pencil2: Task 1 - Grid layout
+
+:exclamation: In this exercise edit the code in this editor: [Grid task](https://codepen.io/grynag/pen/XWWBWww)
+Solution can be found here: [Grid task 1 solution](https://codepen.io/grynag/pen/abbjzYZ)
+Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+
+### Task 1.1 Name all areas
+
+Give the header, content, footer and sidebar the `grid-area:` property and give them names.
+
+### Task 1.2 Setup the grid template areas
+
+Setup the `grid-tempate-areas` on the parent to make the following layout:
+
+:question: How do you get the content 2x the size of the sidebar?
+
+![grid](images/layout.png)
+
+## Grid gap
+
+The `gap` property can be used to add spacing between grid elements. You can specify gap between rows by using `row-gap`, between columns with `column-gap` and between both with just `gap`.
+
+`gap`
+![grid](images/gap.jpg)
+
+`row-gap`
+![grid](images/row-gap.jpg)
+
+`column-gap`
+![grid](images/column-gap.jpg)
+
+## :pencil2: Task 2 - Grid inside the grid
+
+:exclamation: You can either use the your solution from Task 1 to move forward or use the given solution [Grid task 1 solution](https://codepen.io/grynag/pen/BaaPyxO)  
+Solution can be found here: [Grid task 2 solution](https://codepen.io/taranger/pen/drjYGq)
+
+### Task 2.1 Grid the content
+
+:book: A card is commonly used name for elevated boxes with content
+
+Our cards with text and kitten pictures looks a bit sad. To fix this, set up a new grid inside the grid.
+The cards live inside the `<div class="content"></div>` so that will make our new grid parent. You should try to make it look something like this:
+
+:question: Do you need to use grid-areas here, or could you solve this differently than the main layout?
+:question: How do you get the same spacing between each card, but not on the outside?
+
+![grid](images/grid-cards.jpg)
+
+### Task 2.2 Center the card with flexbox
+
+By using the knowledge you obtained in the previous task, center the card content by using flexbox.

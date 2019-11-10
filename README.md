@@ -1,11 +1,15 @@
 # Styling Fundametals
+
 This workshop will give a short introduction to styling (CSS), and contain assignments aimed at practising the fundametals of styling for modern websites.
 
 ## What you need
-* Any modern web browser: Firefox, Chrome etc
 
-## Exercises 
-[Exercise 1 - The cascade, selectors, and specificity](exercise-1/readme.md)  
+- Any modern web browser: Firefox, Chrome etc
+- We will use [Codepen](https://codepen.io/) (online code editor) to solve the tasks
+
+## Exercises
+
+[Exercise 1 - The cascade, selectors, and specificity](exercise-1/readme.md)
 
 [Exercise 2 - Sizing and the box model](exercise-2/readme.md)
 

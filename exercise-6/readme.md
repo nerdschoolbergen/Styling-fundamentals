@@ -2,7 +2,7 @@
 
 Job well done! Now you are through the basics. The next task is a bonus task and it will require you to use all the knowledge you have aquired up until now. 
 
-:star: [Open the starting point for this assignment at codepen](https://codepen.io/taranger/pen/GeBwWL).
+:exclamation: In this exercise edit the code in this editor: :star: [Open the starting point for this assignment at codepen](https://codepen.io/taranger/pen/GeBwWL).
 
 As you can see the starting point is a simple HTML page. I would recommend doing the following things before starting to write the CSS:
 1. Identify elements that could have similar styles and give them the same class names
