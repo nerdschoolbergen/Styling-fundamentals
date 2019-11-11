@@ -106,10 +106,10 @@ Solution can be found here: [Animation solution](https://codepen.io/taranger/pen
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 #### Task 1
-Make it so that `#item1` element's background-color is changed to blue when you hover it.
+Make it so that `#item1` element's background-color is changed to blue when you hover it. Make sure it has a transition of 2 seconds.
 
 #### Task 2
-Make it so that `#item2` element's width is set to 800px when hovered, also change the timing function to ease in and out.
+Make it so that `#item2` element's width is set to 800px when hovered, also change the timing function to ease in and out with a  transition of 2 seconds.
 
 #### Task 3
 Make a new keyframe animation for `#item3` called ``spin`` it should start with a rotate transform of 0 degrees and end with 90 degrees. Give it a duration of 2 seconds and iteration count of infinite. Google "transform rotate css" if you are unsure of the syntax.
