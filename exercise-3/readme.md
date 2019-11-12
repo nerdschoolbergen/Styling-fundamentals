@@ -191,8 +191,7 @@ The `gap` property can be used to add spacing between grid elements. You can spe
 ## :pencil2: Task 2 - Grid inside the grid
 
 :exclamation: You can either use the your solution from Task 1 to move forward or use the given solution [Grid task 1 solution](https://codepen.io/grynag/pen/BaaPyxO)  
-Solution can be found here: [Grid task 2 solution](https://codepen.io/taranger/pen/drjYGq)
-
+Solution can be found here: [Grid task 2 solution](https://codepen.io/grynag/pen/BaaPyxO) 
 ### Task 2.1 Grid the content
 
 :book: A card is commonly used name for elevated boxes with content
