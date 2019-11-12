@@ -39,7 +39,9 @@ There are a number of different breakpoint configurations that is possible, it a
 :exclamation: In this exercise edit the code in this editor: [Mediaqueries exercise](https://codepen.io/taranger/pen/dreBay).  
 Solution can be found here [Mediaqueries exercise solution](https://codepen.io/taranger/pen/vPjqbN)
 
-Open the mediaqueries exercise starting point code pen. Move the divider centered on the screen to stretch the webpage. Observe how the elements stretch and shrink. They still keep their position relative to eachother. For example the sidebar will still be placed on the same row as the main-content even if the window shrinks below 600px. So if this were to be viewed on a mobile or tablet, these two containers would be too crammed with content.
+Open the mediaqueries exercise starting point code pen. Depending on how your codepen is setup you could try to drag the browser to a smaller size or use a vertical setup in codepen in order to vary the width of the example - Ask for help if this is confusing. 
+
+Observe how the elements stretch and shrink. They still keep their position relative to eachother. For example the sidebar will still be placed on the same row as the main-content even if the window shrinks below 600px. So if this were to be viewed on a mobile or tablet, these two containers would be too crammed to display content in a clear way.
 
 #### Task 1
 
