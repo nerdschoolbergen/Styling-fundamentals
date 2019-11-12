@@ -82,7 +82,7 @@ or a link based on the content of it's `href` attribute. Since we in HTML5 are a
 ```html
 <div data-my-magic-attribute="I also have a value!">I have a custom attribute</div>
 ```
-, we could essentially use attributes like we would use classes(but please don't). We target attributes in CSS using "bracket"(`[]`) notation.
+We could essentially use attributes like we would use classes (but please don't). We target attributes in CSS using "bracket"(`[]`) notation.
 :exclamation: [In attribute selectors we can even use pseudo-regular expressions to target attribute values](https://css-tricks.com/attribute-selectors/)
 ```css
 button[disabled] {
