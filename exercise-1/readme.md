@@ -186,7 +186,7 @@ Notice that all images in the HTML have a class "image", create a new css rule f
 ```
 
 #### Task 4
-Make it so when you hover the checkboxes `<input>`, the cursor changes to a pointer, if you are unsure read the section on pseudo classes above.
+Make it so when you hover the checkboxes `<input>`, the cursor changes to a pointer 👆 , if you are unsure read the section on pseudo classes above.
 You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute `[type="checkbox"]`. 
 
 #### Task 5
