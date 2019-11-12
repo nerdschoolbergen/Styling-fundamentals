@@ -57,7 +57,7 @@ Lets make some rules that apply for a minimum of 900px width and up. Set up anot
 
 #### Task 4
 
-Now the page will be more suited to different screen sizes, making text larger when the screensize is larger. Lets assume that the footer is not needed when we are on mobile. Try to hide the footer when the screen is set to the first query you made. See the section on display properties in [Exercise 2](exercise-2/readme.md) if you are usure what propery to use.
+Now the page will be more suited to different screen sizes, making text larger when the screensize is larger. Lets assume that the footer is not needed when we are on mobile. Try to hide the footer when the screen is set to the first query you made. See the section on display properties in [Exercise 2](../exercise-2/readme.md) if you are usure what propery to use.
 
 #### Task 5
 
