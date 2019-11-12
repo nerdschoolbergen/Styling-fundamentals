@@ -27,7 +27,7 @@ The outermost layer between the target element and its parent element. Adding sp
 ## :pencil2: Box model Tasks
 :exclamation: In this exercise edit the code in this editor: [Box model Tasks](https://codepen.io/taranger/pen/moLWMB)  
 Solution to the box model tasks can be found here: [Box model Tasks solution](https://codepen.io/taranger/pen/XGqVXL)  
-Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.  
+Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.  
 
 #### Task 1
 Try giving the .item class a padding of 20px and see what happens. The span elements are displayed as inline by default, so when setting padding to 20px, the elements will flow outside of the container.
@@ -128,7 +128,7 @@ Using `justify-content` can control the justification inside the container of fl
 ## :pencil2: Flexbox Tasks
 :exclamation: In this exercise edit the code in this editor: [Flexbox Tasks](https://codepen.io/taranger/pen/OqZzWz)  
 Solution to the Flexbox Tasks can be found here: [Flexbox Tasks solution](https://codepen.io/taranger/pen/xBjeLG)  
-Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.  
+Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.  
 
 Open the flexbox tasks code pen and start by dragging the window divider in the middle of the screen to try and squeeze the boxes on the right. Or you can drag the whole browser window and see what happens. Since the container does not have the flex dispaly property, and the children elements have the inline-block display property, they will wrap to the next line when whe available space is gone.
 
@@ -152,7 +152,7 @@ These two css properties come with the values `top`, `left`, `right` and `bottom
 ## :pencil2: Flow Tasks
 :exclamation: In this exercise edit the code in this editor: [Flow Tasks](https://codepen.io/taranger/pen/QorPXP)  
 Solution to the Flow Tasks can be found here: [Flow Tasks solution](https://codepen.io/taranger/pen/oVdRXG)  
-Remember to ask if you are stuck then [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.  
+Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.  
 
 In this task we have a chatbox that is placed together with the rest of the content on the site, we want it to be placed outside of the content and be available while browsing the site.
 
