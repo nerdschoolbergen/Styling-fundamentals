@@ -20,7 +20,9 @@ You can give an element a 10px padding by typing: `padding: 10px`. Padding can a
 The layer surrounding the padding layer. Many times this will have a small width of maybe only 1 pixel. Unlike the padding and margin, this property can be given color and style. and example of a faint thin grey border could be written like this: `border: 1px solid lightgray;`.
 
 ### Margin
-The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of pushing other close elements away with an invisible forcefield. Margins are written in the same style as padding. `margin-top: 10px`, or `margin: 15px 10px 20px 20px` for example. :exclamation: Margins will overlap, so if two elements have the same margin of 20px that is pushing on eachother, they will overlap and the gap between them will only be 20px and not 40px.
+The outermost layer between the target element and its parent element. Adding space to the margin will give the visual effect of pushing other close elements away with an invisible forcefield. Margins are written in the same style as padding. `margin-top: 10px`, or `margin: 15px 10px 20px 20px` for example.
+
+:exclamation: Margins will overlap, so if two elements have the same margin of 20px that is pushing on eachother, they will overlap and the gap between them will only be 20px and not 40px.
 
 ## :pencil2: Box model Tasks
 :exclamation: In this exercise edit the code in this editor: [Box model Tasks](https://codepen.io/taranger/pen/moLWMB)  
