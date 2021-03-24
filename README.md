@@ -2,6 +2,9 @@
 
 This workshop will give a short introduction to styling (CSS), and contain assignments aimed at practising the fundametals of styling for modern websites.
 
+# Presentation slides
+[You can find the presentation slides here](https://docs.google.com/presentation/d/11l8AE9Aw1tAzBm62tAub-DBp23ncxSAqYbyeZQWwtwg/edit#slide=id.p1)
+
 ## What you need
 
 - Any modern web browser: Firefox, Chrome etc
