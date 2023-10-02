@@ -3,7 +3,7 @@
 This workshop will give a short introduction to styling (CSS), and contain assignments aimed at practising the fundametals of styling for modern websites.
 
 # Presentation slides
-[You can find the presentation slides here](https://docs.google.com/presentation/d/11l8AE9Aw1tAzBm62tAub-DBp23ncxSAqYbyeZQWwtwg/edit?usp=sharing)
+[You can find the presentation slides here](https://docs.google.com/presentation/d/1w8oZIHc2-LqRq88wn01X8xO29k_H2-bFZkuGQq-KFrM/edit?usp=sharing)
 
 ## What you need
 
@@ -26,7 +26,6 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 
 [Exercise 7 - Freestyle](exercise-7/readme.md)
 
-[Presentation slides](http://tinyurl.com/stylingfundamentals-slides)
 
 #### Icons with special meaning
 
