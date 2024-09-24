@@ -14,7 +14,7 @@ The box model is a core concept of css which affects all HTML-elements that are 
 ### Content 
 The inner layer that contains the contents of the target element. Content can consist of any type of HTML-element.
 ### Padding
-Outside of the content layer is the padding. Adding space to the padding will give the visual effect of having white-space around the content.
+Outside of the content layer is the padding. Adding space to the padding will give the visual effect of having space around the content.
 You can give an element a 10px padding by typing: `padding: 10px`. Padding can also be given specific values such as this `padding-top: 10px` `padding-left: 25px` or the shorthand vertical and hortizontal syntax which is written like this: `padding: 0px 10px`. Or like this `padding: 10px 10px 10px 10px` for top, right, bottom and left padding.
 ### Border
 The layer surrounding the padding layer. Many times this will have a small width of maybe only 1 pixel. Unlike the padding and margin, this property can be given color and style. and example of a faint thin grey border could be written like this: `border: 1px solid lightgray;`.
@@ -52,7 +52,7 @@ For full details of display properties check out: [Display properties](https://d
 :exclamation: A similar rule is `visibility: hidden`, it will hide items but not affect their presence in document, making the items still push on eachother while being invisible.
 
 ### inline
-`display: inline` will make an element behave as an inline element (like <span>). Any height and width properties will have no effect to it. Text and icons are common uses for display: inline.
+`display: inline` will make elements flow like text in a paragraph, (like `<span>`). Any height and width properties will have no effect to it. Text and icons are common uses for display: inline.
 
 ### inline-block
 `display: inline-block` will make an element display as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values. Uses for inline-block can be pretty much anything that you want to not take up all available space and control the size of.
@@ -94,7 +94,7 @@ The default value for `flex-wrap` is set to nowrap, this is so that items can be
 #### justify-content
 ![](images/justify-content.png)
 
-Using `justify-content` can control the justification inside the container of flexing items, and also white-space between flexing items and their parent container. The different values are: `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
+Using `justify-content` can control the justification inside the container of flexing items, and also space between flexing items and their parent container. The different values are: `center`, `flex-start`(default), `flex-end`, `space-around`, `space-between`.
 
 ```css 
  .main-content {
