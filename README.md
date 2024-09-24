@@ -8,7 +8,6 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 ## What you need
 
 - Any modern web browser: Firefox, Chrome etc
-- We will use [Codepen](https://codepen.io/) (online code editor) to solve the tasks
 
 ## Exercises
 

@@ -158,16 +158,17 @@ The example above contains a div with two elements "h1" and "p", separating the 
   }
 ```
 ## :pencil2: Tasks
-:exclamation: In this exercise edit the code in this editor: [Selector exercises](https://codepen.io/taranger/pen/NJaOzM)     
+First open `excercise-1.html` in IntelliJ or another editor. Then, navigate to `exercise-1.html` in your standard file
+browser (e.g., Windows Explorer or Finder), and double click it to open the file in a web browser. 
+
 Solution can be found here: [Selector exercises solution](https://codepen.io/taranger/pen/YgjyGd)  
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 #### Task 1
-Change the color of the h1 element to red. (The h1 selector in the css can be found on line 29 with `display: inline-block` property already present)
+Change the color of the h1 element to red.
 
 ```css
   h1 {
-    display: inline-block;
     /* insert color properties here */
   }
 ```
@@ -175,6 +176,9 @@ Change the color of the h1 element to red. (The h1 selector in the css can be fo
 #### Task 2
 Make another identical selector for h1 below the previous one and set the color to blue. See that it overrides the existing css rule above it. You should have two h1 selector at this point.
 :exclamation: this is not best practise but only for illustrating how the cascade works.
+
+#### Task 3
+Change the font for the entire HTML document to "Arial". Hint: use the property `font-family`.
 
 #### Task 3
 Notice that all images in the HTML have a class "image", create a new css rule for "image" at the bottom of the css window. Make the width and height 100px;
