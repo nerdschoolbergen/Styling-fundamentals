@@ -158,7 +158,7 @@ The example above contains a div with two elements "h1" and "p", separating the 
   }
 ```
 ## :pencil2: Tasks
-First open `excercise-1.html` in IntelliJ or another editor. Then, navigate to `exercise-1.html` in your standard file
+First open `index.html` and `styles.css` in IntelliJ or another editor. Then, navigate to `index.html` in your standard file
 browser (e.g., Windows Explorer or Finder), and double click it to open the file in a web browser. 
 
 Solution can be found here: [Selector exercises solution](https://codepen.io/taranger/pen/YgjyGd)  
@@ -180,7 +180,10 @@ Make another identical selector for h1 below the previous one and set the color 
 #### Task 3
 Change the font for the entire HTML document to "Arial". Hint: use the property `font-family`.
 
-#### Task 3
+#### Task 4
+Set a fixed width for the `div` with id `container`, so that it is about 80 characters wide. Hint: use the `ch` length unit.
+
+#### Task 5
 Notice that all images in the HTML have a class "image", create a new css rule for "image" at the bottom of the css window. Make the width and height 100px;
 
 ```css 
@@ -189,14 +192,11 @@ Notice that all images in the HTML have a class "image", create a new css rule f
   }
 ```
 
-#### Task 4
+#### Task 6
 Make it so when you hover the checkboxes `<input>`, the cursor changes to a pointer 👆 , if you are unsure read the section on pseudo classes above.
 You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute `[type="checkbox"]`. 
 
-#### Task 5
-Target the `#content` id selector of the page and give it a background color using the value "#c3e4d6", and a padding of 20px;
-
-#### Task 6
+#### Task 9
 Add a inline style attribute to the h1 header and add a property that puts the font-size at 50px;
 
 ### [Go to exercise 2 :arrow_right:](../exercise-2/readme.md)

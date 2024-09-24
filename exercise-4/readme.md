@@ -1,74 +1,211 @@
-# Exercise 4 - Making it responsive with media queries
+# Exercise 3 - Layout using grid
 
-Media query is a CSS technique introduced in CSS3.
-It uses the @media rule to apply CSS properties only if a certain condition is true.
-To use a mediaquery simply make a new css rule with the @media tag followed by only screen and a breakpoint. It is common to use the screen width as breakpoints either through min-width or max-width, but you can also trigger it through other properties such as (orientation: landscape) if you are on mobile and flip the device over.
+The grid layout property is a grid-based layout system in which you can use columns and rows to define webpages instead of having to use floats and positioning.
 
-In the example code below, the background color of the body will change to red when the min-width of the window is 600px. This means that resizing the browser window will give the webpage a different look depending on the size of the window.
+Grids are a fairly new css property, but is now possible to use in the most up to date browsers (Chrome, Firefox, Safari and Edge). Internet Explorer only has partial support so if you are designing a website that needs to work i IE you need to be careful using the new grid properties. [Can I use](https://caniuse.com/) offers an overview of the support:
+
+<a href="http://caniuse.com/#feat=css-grid">
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/image/css-grid.webp">
+<img src="https://caniuse.bitsofco.de/image/css-grid.png" alt="Data on support for the css-grid feature across the major browsers from caniuse.com">
+</picture>
+</a>
+
+A grid layout consists of one parent element where the `display: grid` needs to be set. It will then affect all immediate children of the parent:
+
+```html
+<div class="grid-parent">
+  <div class="grid-child">Child 1</div>
+  <div class="grid-child">Child 2</div>
+  <div class="grid-child">Child 3</div>
+  <div class="grid-child">Child 4</div>
+  <div class="grid-child">Child 5</div>
+  <div class="grid-child">Child 6</div>
+</div>
+```
+
+With some grid styling:
 
 ```css
-@media only screen and (min-width: 600px) {
-  body {
-    background-color: red;
-  }
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: dodgerblue;
+  padding: 10px;
+  gap: 10px;
+}
+
+.grid-child {
+  background: white;
+  text-align: center;
+  padding: 20px;
 }
 ```
 
-We can use @media to our advantage when desiging webpages for mobile. We type whatever css rules we want in the media query that we want to override previous rules.
-In the example below you can see that we set the body width to 100% when the screen width is at max 600px, this will make the body fill the entire width of the browser window. When the screen width is 601px minimum we set the width to 800px and margin: 0px auto, making it so that it will be a set size of 800px and be centered in the window due to the margin rule.
+It will look like this:
+![grid](images/grid.jpg)
+
+:exclamation: Only immediate children will be a part of the grid.
+
+```html
+<div class="grid-parent">
+  <div class="grid-child">Child 1</div>
+  <div class="grid-child">Child 2</div>
+  <div class="grid-child">
+    Child 3
+    <div class="not-a-grid-child">Not a grid-child</div>
+  </div>
+  <div class="grid-child">Child 4</div>
+  <div class="grid-child">Child 5</div>
+  <div class="grid-child">Child 6</div>
+</div>
+```
+
+![grid](images/grid-not-child.jpg)
+
+Note that the "Not a grid-child" is placed inside the child 3 grid-item, and does not get affected by the `display: grid`.
+
+## Grid template
+
+As you might have noticed in the grid-css earlier there is more grid-properties than just `display: grid` and `grid-template` is one of them.
+
+### Grid-template-columns
+
+With `grid-template-columns` you define the size of each grid column. In the css above `repeat(3, 1fr)` means that there will be 3 columns per row where each grid-child gets 1/3 of the available space.
+
+You can use a range of different sizing options when defining template columns e.g:
 
 ```css
-@media only screen and (max-width: 600px) {
-  body {
-    width: 100%;
-  }
+grid-template-columns: 100px 1fr 50% min-content max-content;
+```
+
+![grid](images/sizing.jpg)
+
+- 100px is a set pixel value
+- 1fr is a fraction unit
+- 50% is a percentage size based on the witdh of the parent
+- min-content is the minimum size the element needs to not to cause overflow
+- max-content is the elements ideal size given infinite available space
+
+### Grid-template-rows
+
+`grid-template-rows` works in the same way as columns.
+
+### Grid-template-area
+
+`grid-template-areas` gives us a way to name each area in our grid layout. Notice the `grid-template-area` property on the parent and the `grid-area` on child elements:
+
+```html
+<div class="grid-parent">
+  <div class="grid-child grid-child-1">1</div>
+  <div class="grid-child grid-child-2">2</div>
+  <div class="grid-child grid-child-3">3</div>
+  <div class="grid-child grid-child-4">4</div>
+</div>
+```
+
+```css
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "one two"
+    "three four";
+  background-color: dodgerblue;
+  padding: 10px;
+  gap: 10px;
 }
 
-@media only screen and (min-width: 601px) {
-  body {
-    width: 800px;
-    margin: 0px auto;
-  }
+.grid-child {
+  background: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.grid-child-1 {
+  grid-area: one;
+}
+
+.grid-child-2 {
+  grid-area: two;
+}
+
+.grid-child-3 {
+  grid-area: three;
+}
+
+.grid-child-4 {
+  grid-area: four;
 }
 ```
 
-There are a number of different breakpoint configurations that is possible, it all depends on what your target devices are. But it is common to set mobile size from around 400-800px, tablet from 800-1000px and desktop from around 1000 and up. Some websites have breakpoints at larger sizes than that, in order to support 4k screens for example.
+![grid](images/grid-area-1.jpg).
 
-## :pencil2: Media queries Tasks
+Here each child has gotten it's own grid-area name and the parent can use these names in the `grid-template-area` to set them up. By changing that property you can change the entire layout:
 
-:exclamation: In this exercise edit the code in this editor: [Mediaqueries exercise](https://codepen.io/taranger/pen/dreBay).  
-Solution can be found here [Mediaqueries exercise solution](https://codepen.io/taranger/pen/vPjqbN)
+```css
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas:
+  "one one three"
+  "two four four";
+```
 
-Open the mediaqueries exercise starting point code pen. Depending on how your codepen is setup you could try to drag the browser to a smaller size or use a vertical setup in codepen in order to vary the width of the example - Ask for help if this is confusing. 
+Will give the following layout:
+![grid](images/grid-area-51.jpg).
 
-Observe how the elements stretch and shrink. They still keep their position relative to eachother. For example the sidebar will still be placed on the same row as the main-content even if the window shrinks below 600px. So if this were to be viewed on a mobile or tablet, these two containers would be too crammed to display content in a clear way.
+This means we can use css to rearrange the order of the children without changing the HTML! This is especially useful if you need to change your layout on smaller devices.
 
-#### Task 1
+## :pencil2: Task 1 - Grid layout
 
-We want to make it so that on mobile, the main-content and sidebar is stacked ontop of eachother instead of side by side. Write a mediaquery that is set to max width of 600px and inside of it set the display property of .container to block instead of flex.
+:exclamation: In this exercise edit the code in this editor: [Grid task](https://codepen.io/grynag/pen/XWWBWww)  
+Solution can be found here: [Grid task 1 solution](https://codepen.io/grynag/pen/abbjzYZ)  
+Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
-#### Task 2
+### Task 1.1 Name all areas
 
-Lets make the main-content and sidebar fill the whole width on mobile. Change the width of .main-content and .sidebar so that they take up full width in this mediaquery.
+Give the header, content, footer and sidebar the `grid-area:` property and give them names.
 
-#### Task 3
+### Task 1.2 Setup the grid template areas
 
-Lets make some rules that apply for a minimum of 900px width and up. Set up another media query that affect this requirement. Now we want the font size of the article element to be 24px and the header element to be 40px.
+Setup the `grid-tempate-areas` on the parent to make the following layout:
 
-#### Task 4
+:question: How do you get the content 2x the size of the sidebar?
 
-Now the page will be more suited to different screen sizes, making text larger when the screensize is larger. Lets assume that the footer is not needed when we are on mobile. Try to hide the footer when the screen is set to the first query you made. See the section on display properties in [Exercise 2](../exercise-2/readme.md) if you are usure what propery to use.
+![grid](images/layout.png)
 
-#### Task 5
+## Grid gap
 
-When the screensize is 601px and up, make sidebar and main-content switch places by reversing the flex-direction on the .container element, and also make it so the sidebar is aligned at the bottom of the .container instead of the top.
+The `gap` property can be used to add spacing between grid elements. You can specify gap between rows by using `row-gap`, between columns with `column-gap` and between both with just `gap`.
 
-#### :star: Bonus task
+`gap`
+![grid](images/gap.jpg)
 
-We want to make it so that if you are on a screensize of 400px and below the whole article element is not displayed, and also make a p element with an id "error" that is shown in place of the article that says "Your device is not suited to view this page". Make it so that it is not displayed by default and is only shown when the breakpoint of 400px is reached.
+`row-gap`
+![grid](images/row-gap.jpg)
 
-#### :star: Bonus task - Update the grid to use media query
+`column-gap`
+![grid](images/column-gap.jpg)
 
-Use the solution from the grid task: [Grid task 2 solution](https://codepen.io/grynag/pen/BaaPyxO) to move the sidebar on mobile devices. If the device is smaller than 600px, the sidebar should be underneath the content instead of on the side.
+## :pencil2: Task 2 - Grid inside the grid
 
-### [Go to exercise 5 :arrow_right:](../exercise-5/readme.md)
+:exclamation: You can either use the your solution from Task 1 to move forward or use the given solution [Grid task 1 solution](https://codepen.io/grynag/pen/BaaPyxO)  
+Solution can be found here: [Grid task 2 solution](https://codepen.io/grynag/pen/BaaPyxO) 
+### Task 2.1 Grid the content
+
+:book: A card is commonly used name for elevated boxes with content
+
+Our cards with text and kitten pictures looks a bit sad. To fix this, set up a new grid inside the grid.
+The cards live inside the `<div class="content"></div>` so that will make our new grid parent. You should try to make it look something like this:
+
+:question: Do you need to use grid-areas here, or could you solve this differently than the main layout?
+:question: How do you get the same spacing between each card, but not on the outside?
+
+![grid](images/grid-cards.jpg)
+
+### Task 2.2 Center the card with flexbox
+
+By using the knowledge you obtained in the previous exercise, center the card content by using flexbox.
+
+### [Go to exercise 4 :arrow_right:](../exercise-3/readme.md)

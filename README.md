@@ -8,6 +8,7 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 ## What you need
 
 - Any modern web browser: Firefox, Chrome etc
+- Any code editor: Intellij, Visual Studio Code etc
 
 ## Exercises
 
@@ -15,9 +16,9 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 
 [Exercise 2 - Sizing and the box model](exercise-2/readme.md)
 
-[Exercise 3 - Layout using grid](exercise-3/readme.md)
+[Exercise 3 - Layout using grid](exercise-4/readme.md)
 
-[Exercise 4 - Making it responsive with media queries](exercise-4/readme.md)
+[Exercise 4 - Making it responsive with media queries](exercise-3/readme.md)
 
 [Exercise 5 - Introduction to transform and transition](exercise-5/readme.md)
 
