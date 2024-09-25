@@ -105,7 +105,7 @@ in the text.
 
 The result should look something like this: 
 ![finished menu](finished-menu.png)
-
+### [Go to exercise 3 :arrow_right:](../exercise-3/readme.md)
 
 
 

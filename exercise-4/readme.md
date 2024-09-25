@@ -208,4 +208,4 @@ The cards live inside the `<div class="content"></div>` so that will make our ne
 
 By using the knowledge you obtained in the previous exercise, center the card content by using flexbox.
 
-### [Go to exercise 4 :arrow_right:](../exercise-3/readme.md)
+### [Go to exercise 5 :arrow_right:](../exercise-5/readme.md)
