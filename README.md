@@ -16,15 +16,11 @@ This workshop will give a short introduction to styling (CSS), and contain assig
 
 [Exercise 2 - Sizing and the box model](exercise-2/readme.md)
 
-[Exercise 3 - Layout using grid](exercise-4/readme.md)
+[Exercise 3 - Making it responsive with media queries](exercise-3/readme.md)
 
-[Exercise 4 - Making it responsive with media queries](exercise-3/readme.md)
+[Bonus Exercise - Layout using grid](exercise-4/readme.md)
 
-[Exercise 5 - Introduction to transform and transition](exercise-5/readme.md)
-
-[Exercise 6 - Layout using float](exercise-6/readme.md)
-
-[Exercise 7 - Freestyle](exercise-7/readme.md)
+[Bonus Exercise - Introduction to transform and transition](exercise-5/readme.md)
 
 
 #### Icons with special meaning
