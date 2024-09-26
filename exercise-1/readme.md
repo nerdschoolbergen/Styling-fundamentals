@@ -181,9 +181,6 @@ Make another identical selector for h1 below the previous one and set the color 
 Change the font for the entire HTML document to "Arial". Hint: use the property `font-family`.
 
 #### Task 4
-Set a fixed width for the `div` with id `container`, so that it is about 80 characters wide. Hint: use the `ch` length unit.
-
-#### Task 5
 Notice that all images in the HTML have a class "image", create a new css rule for "image" at the bottom of the css window. Make the width and height 100px;
 
 ```css 
@@ -192,11 +189,11 @@ Notice that all images in the HTML have a class "image", create a new css rule f
   }
 ```
 
-#### Task 6
+#### Task 5
 Make it so when you hover the checkboxes `<input>`, the cursor changes to a pointer 👆 , if you are unsure read the section on pseudo classes above.
 You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute `[type="checkbox"]`. 
 
-#### Task 9
+#### Task 6
 Add a inline style attribute to the h1 header and add a property that puts the font-size at 50px;
 
 ### [Go to exercise 2 :arrow_right:](../exercise-2/readme.md)
