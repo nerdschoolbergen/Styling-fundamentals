@@ -2,15 +2,6 @@
 
 The grid layout property is a grid-based layout system in which you can use columns and rows to define webpages instead of having to use floats and positioning.
 
-Grids are a fairly new css property, but is now possible to use in the most up to date browsers (Chrome, Firefox, Safari and Edge). Internet Explorer only has partial support so if you are designing a website that needs to work i IE you need to be careful using the new grid properties. [Can I use](https://caniuse.com/) offers an overview of the support:
-
-<a href="http://caniuse.com/#feat=css-grid">
-<picture>
-<source type="image/webp" srcset="https://caniuse.bitsofco.de/image/css-grid.webp">
-<img src="https://caniuse.bitsofco.de/image/css-grid.png" alt="Data on support for the css-grid feature across the major browsers from caniuse.com">
-</picture>
-</a>
-
 A grid layout consists of one parent element where the `display: grid` needs to be set. It will then affect all immediate children of the parent:
 
 ```html
@@ -208,4 +199,4 @@ The cards live inside the `<div class="content"></div>` so that will make our ne
 
 By using the knowledge you obtained in the previous exercise, center the card content by using flexbox.
 
-### [Go to exercise 4 :arrow_right:](../exercise-3/readme.md)
+### [Go to exercise 5 :arrow_right:](../exercise-5/readme.md)

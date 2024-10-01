@@ -68,5 +68,6 @@ Resources:
 - [CSS Media query for dark mode](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
 - [CSS Filter invert](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert)
 
+### [Go to exercise 4 :arrow_right:](../exercise-4/readme.md)
 
 

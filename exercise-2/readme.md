@@ -30,17 +30,21 @@ Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mo
 
 
 #### Task 1
+Set a fixed width for the `div` with id `container`, so that it is about 80 characters wide. Hint: use the `ch` length unit.
+Also, set a margin of 100 pixels on the left side of the container.
+
+#### Task 2
 We want to make the header and the main content stand out from the page background. Set the background color for the entire
 html document to `#c3e4d6`, and the background color of the `header` and the `main` elements to `white`. Also, add a
 padding of 20 pixels to both.
 
-#### Task 2
+#### Task 3
 We want to make the edges of the content a bit neater. Add a border radius of 10 pixels to the top of the header and the bottom of the main element.
 Feel free to play around with the values.
 
 [Border radius on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 
-#### Task 3
+#### Task 5
 Make the text in the footer centered.
 
 
@@ -68,14 +72,14 @@ For full details of display properties check out: [Display properties](https://d
 
 We want to turn the menu unordered list into a menu with buttons, like this: ![menu-buttons](menu-buttons.png)
 
-#### Task 4 
+#### Task 6 
 
 The first task is to turn the `<li>` elements into inline block elements. You can select
 them by using `#menu li { ... }`, meaning any `<li>` elements under the `#menu` element.
 
 The result should look something like this: ![inline block](menu-inline-block.png)
 
-#### Task 5
+#### Task 7
 
 Next, let's make the menu buttons look a bit more like buttons. You can achieve this by
 using setting the properties `border`, `border-radius`, `padding` and `background-color` on the 
@@ -85,7 +89,7 @@ Try to make the buttons look a bit like this:
 
 ![button look](button-look.png)
 
-#### Task 6
+#### Task 8
 Use the inspector (right click the menu and select `inspect`) to figure out why there is a blank
 space to the left of the menu. Write css to remove the white space. The trick is to identify the 
 correct element to write css for.
@@ -93,7 +97,7 @@ correct element to write css for.
 ![using the inspector](inspector.png)
 
 
-#### Task 7
+#### Task 9
 
 The links on the buttons are styled with blue color and underline, like normal links in 
 the text. Since this is a menu, we want to remove the default styling and simply show 
@@ -105,7 +109,7 @@ in the text.
 
 The result should look something like this: 
 ![finished menu](finished-menu.png)
-
+### [Go to exercise 3 :arrow_right:](../exercise-3/readme.md)
 
 
 

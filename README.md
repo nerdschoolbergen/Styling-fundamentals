@@ -3,7 +3,7 @@
 This workshop will give a short introduction to styling (CSS), and contain assignments aimed at practising the fundametals of styling for modern websites.
 
 # Presentation slides
-[You can find the presentation slides here](https://docs.google.com/presentation/d/1w8oZIHc2-LqRq88wn01X8xO29k_H2-bFZkuGQq-KFrM/edit?usp=sharing)
+[You can find the presentation slides here](https://docs.google.com/presentation/d/1I7__Gg2fXYzjgo_E-GPCL8_2MdV9Ab_jxGKWojqrb3U/edit?usp=sharing)
 
 ## What you need
 
