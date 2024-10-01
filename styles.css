@@ -1,78 +1,7 @@
 body {
     /* put fonts for the entire document here */
-    font-family: arial, sans-serif;
 }
 
 h1 {
     /* add h1 color here */
-    color: red;
-}
-
-@media screen and (min-width: 900px) {
-    #container {
-        width: 80ch;
-        margin-left: 100px;
-    }
-}
-
-header {
-    border-radius: 10px 10px 0 0;
-}
-
-main {
-    border-radius: 0 0 10px 10px;
-}
-
-main, header {
-    padding: 20px;
-    background-color: white;
-}
-
-footer {
-    text-align: center;
-}
-
-body {
-    background-color: #c3e4d6;
-}
-
-#menu {
-
-    padding: 0
-}
-
-@media (prefers-color-scheme: dark) {
-    #logo {
-        filter: invert(100%);
-    }
-
-    a {
-        color: #579757
-    }
-
-    h1 { color: lightblue }
-
-    body {
-        background-color: #404040;
-    }
-
-    main, header {
-        background-color: #303030;
-        color: white;
-    }
-}
-
-
-
-#menu li {
-    display: inline-block;
-    border: 1px solid gray;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #eeffee;
-}
-
-#menu li a {
-    text-decoration: none;
-    color: black;
 }

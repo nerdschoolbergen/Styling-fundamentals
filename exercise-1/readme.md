@@ -160,8 +160,7 @@ The example above contains a div with two elements "h1" and "p", separating the 
 ## :pencil2: Tasks
 First open `index.html` and `styles.css` in IntelliJ or another editor. Then, navigate to `index.html` in your standard file
 browser (e.g., Windows Explorer or Finder), and double click it to open the file in a web browser. 
-
-Solution can be found here: [Selector exercises solution](https://codepen.io/taranger/pen/YgjyGd)  
+ 
 Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
 #### Task 1
