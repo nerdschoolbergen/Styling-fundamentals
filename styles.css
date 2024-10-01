@@ -63,7 +63,6 @@ body {
 }
 
 
-
 #menu li {
     display: inline-block;
     border: 1px solid gray;
@@ -75,4 +74,8 @@ body {
 #menu li a {
     text-decoration: none;
     color: black;
+}
+
+input:hover {
+    cursor: pointer;
 }
