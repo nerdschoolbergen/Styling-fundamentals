@@ -32,6 +32,24 @@ In the example below you can see that we set the body width to 100% when the scr
 }
 ```
 
+:exclamation: Note that you may need to add a `<meta>`-tag to the header of your index.html for the responsive design to recognize the screen size of your device properly:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+Resulting in the header of your index.html looking something like this:
+
+```html
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Exercise</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+```
+
 There are a number of different breakpoint configurations that is possible, it all depends on what your target devices are. But it is common to set mobile size from around 400-800px, tablet from 800-1000px and desktop from around 1000 and up. Some websites have breakpoints at larger sizes than that, in order to support 4k screens for example.
 
 ## :pencil2: Media queries Tasks
