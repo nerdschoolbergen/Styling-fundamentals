@@ -198,5 +198,6 @@ The cards live inside the `<div class="content"></div>` so that will make our ne
 ### Task 2.2 Center the card with flexbox
 
 By using the knowledge you obtained in the previous exercise, center the card content by using flexbox.
+Remember to ask if you are stuck on these tasks, also [MDN - flexbox](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox) is a good resource.
 
 ### [Go to exercise 5 :arrow_right:](../exercise-5/readme.md)
