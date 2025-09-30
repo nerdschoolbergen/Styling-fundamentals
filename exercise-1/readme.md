@@ -1,10 +1,15 @@
 # Exercise 1 - The cascade, selectors, and specificity
 
-This exercise will focus on tackling one of the most common challenges of CSS: selector specificity and the cascade. Since CSS by nature has a global scope, understanding specificity is fundamental in order to contol it.
+:book: This exercise will focus on tackling one of the most common challenges of CSS: selector specificity and the cascade. Since CSS by nature has a global scope, understanding specificity is fundamental in order to contol it.
 
-### The Cascade
+## Before you start
 
-The "cascade" part of the name cascading style sheet is in itself pretty simple: the order in which CSS rules are declared matter. The rules defined last in a stylesheet take precedence over the ones defined earlier.
+- :pencil2: Start by cloning this repository into a folder on your computer if you haven't done so already. If you've never used git before, you can alternatively use the the "Download ZIP" button on the [repository home page](https://github.com/nerdschoolbergen/introduction-to-javascript/tree/master). Click the green "Code" button and then "Download Zip" <img src="https://docs.github.com/assets/cb-13128/mw-1440/images/help/repository/code-button.webp" width=400 />
+- :book: Although you have this `README.md` file on your computer, it's easier to read it on GitHub with formatting. We therefore recommend you keep a web browser tab open with the exercise tasks.
+
+## 1.1 - The Cascade
+
+:book: The "cascade" part of the name cascading style sheet is in itself pretty simple: the order in which CSS rules are declared matter. The rules defined last in a stylesheet take precedence over the ones defined earlier.
 
 ```css
 selector1 {
@@ -20,11 +25,11 @@ selector3 {
 }
 ```
 
-If all these selectors would target the same element, it's text color would be blue since the declarations in `selector3` take precedence over the others due to it being applied last.
+:book:  If all these selectors would target the same element, it's text color would be blue since the declarations in `selector3` take precedence over the others due to it being applied last.
 
 :exclamation: However, the type of selector you use can override the order in which rules are specified.
 
-In order to talk about selector specificity we should first talk about the main groups of selectors:
+:book:  In order to talk about selector specificity we should first talk about the main groups of selectors:
 
 - Element
 - Class
@@ -33,9 +38,9 @@ In order to talk about selector specificity we should first talk about the main 
 - ID
 - Style attribute
 
-### Element
+### 1.1.1 - Element
 
-An element selector (or type selector) is the most basic form of selector. Use the name of the corresponding HTML-element type you want to target, like `<div>`, `<p>`, `<span>`, `<body>` etc.
+:book: An element selector (or type selector) is the most basic form of selector. Use the name of the corresponding HTML-element type you want to target, like `<div>`, `<p>`, `<span>`, `<body>` etc.
 
 ```css
 p {
@@ -43,9 +48,9 @@ p {
 }
 ```
 
-### Class
+### 1.1.2 - Class
 
-A class selector is something that is applied to an HTML-element using the `class` attribute: `<div class="fancy-class">I have a class</div>`. We use the "dot"(`.`) notation to target them in CSS. Different types of elements `(<p>, <h1>, <div>)` can have the same class slector, this is useful so that we can apply general styles to these elements cutting down the amount of css needed.
+:book: A class selector is something that is applied to an HTML-element using the `class` attribute: `<div class="fancy-class">I have a class</div>`. We use the "dot"(`.`) notation to target them in CSS. Different types of elements `(<p>, <h1>, <div>)` can have the same class slector, this is useful so that we can apply general styles to these elements cutting down the amount of css needed.
 
 ```css
 .fancy-class {
@@ -57,9 +62,9 @@ A class selector is something that is applied to an HTML-element using the `clas
 }
 ```
 
-### Pseudo class
+### 1.1.3 - Pseudo class
 
-Pseudo classes are most often used to trigger specific styles on element states like when you hover over a link or focus on an element using tab on your keyboard. But a pseudo class can also target more abstract element properties like the first or last child within a parent element, or if the element is an "only-child", or even if the element does NOT contain another selector. Pseudo classes can be used by themselves, but are usually used in conjunction with another selector in order to not be too general. We use "colon"(`:`) notation to specify pseudo classes.
+:book: Pseudo classes are most often used to trigger specific styles on element states like when you hover over a link or focus on an element using tab on your keyboard. But a pseudo class can also target more abstract element properties like the first or last child within a parent element, or if the element is an "only-child", or even if the element does NOT contain another selector. Pseudo classes can be used by themselves, but are usually used in conjunction with another selector in order to not be too general. We use "colon"(`:`) notation to specify pseudo classes.
 
 ```css
 :hover {
@@ -87,15 +92,15 @@ a:hover {
 
 [Handy reference of all available pseudo classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
-### Attribute
+### 1.1.4 - Attribute
 
-Attribute selectors can be targeted towards all other HTML-element attributes than `class` (explained above) and `id` (explained later). Some common attributes to style would be the `disabled` attribute on a button element
+:book: Attribute selectors can be targeted towards all other HTML-element attributes than `class` (explained above) and `id` (explained later). Some common attributes to style would be the `disabled` attribute on a button element:
 
 ```html
 <button disabled>Disabled button</button>
 ```
 
-or a link based on the content of it's `href` attribute. Since we in HTML5 are allowed to create our own attributes on any element using the `data-` prefix
+:book: ... or a link based on the content of it's `href` attribute. Since we in HTML5 are allowed to create our own attributes on any element using the `data-` prefix
 
 ```html
 <div data-my-magic-attribute="I also have a value!">
@@ -103,7 +108,8 @@ or a link based on the content of it's `href` attribute. Since we in HTML5 are a
 </div>
 ```
 
-We could essentially use attributes like we would use classes (but please don't). We target attributes in CSS using "bracket"(`[]`) notation.
+:book: We could essentially use attributes like we would use classes (but please don't). We target attributes in CSS using "bracket"(`[]`) notation.
+
 :exclamation: [In attribute selectors we can even use pseudo-regular expressions to target attribute values](https://css-tricks.com/attribute-selectors/)
 
 ```css
@@ -124,11 +130,11 @@ a[href*="https://"]
 }
 ```
 
-### Id
+### 1.1.5 - Id
 
-The id selector are meant to target all HTML-elements that are unique. For the id tag to be considered valid by the browser the id must be unique to the whole HTML document. An example of an element with a id tag: `<div id="unique-item">This item is unique</div>`
+:book: The id selector are meant to target all HTML-elements that are unique. For the id tag to be considered valid by the browser the id must be unique to the whole HTML document. An example of an element with a id tag: `<div id="unique-item">This item is unique</div>`
 
-Elements that tend to have ids are main sections of webpages such as the header, main content or the footer. Other specific elements such as input fields may have unique id's so that javascript functions can target them.
+:book: Elements that tend to have ids are main sections of webpages such as the header, main content or the footer. Other specific elements such as input fields may have unique id's so that javascript functions can target them.
 
 ```css
 button#submit {
@@ -140,8 +146,9 @@ button#submit {
 }
 ```
 
-The Id tag is more specific than targeting a class or element, and will overwrite previous styles applied to those elements.
-In the example below the second css rule that points towars p elements with the id "red-text" will overrule the previous one and turn that specific element red, while all other p elements will be blue.
+:book: The Id tag is more specific than targeting a class or element, and will overwrite previous styles applied to those elements.
+
+:book: In the example below the second css rule that points towars p elements with the id "red-text" will overrule the previous one and turn that specific element red, while all other p elements will be blue.
 
 ```css
 p {
@@ -153,9 +160,9 @@ p#red-text {
 }
 ```
 
-### Style attribute
+### 1.1.6 - Style attribute
 
-When styling HTML-elements you do not necessarily need to have a stylesheet, you can write (inline) styles inside a "style" attribute directly on the element itself, such as this: `<p style="color: red">This text is red</p>` This type of styling is regarded as bad practice, because the markup and content of the site should be separated from the styling.
+:book: When styling HTML-elements you do not necessarily need to have a stylesheet, you can write (inline) styles inside a "style" attribute directly on the element itself, such as this: `<p style="color: red">This text is red</p>` This type of styling is regarded as bad practice, because the markup and content of the site should be separated from the styling.
 
 ```html
 <div id="main-content">
@@ -168,7 +175,7 @@ When styling HTML-elements you do not necessarily need to have a stylesheet, you
 </div>
 ```
 
-The example above contains a div with two elements "h1" and "p", separating the styles form the html would make the HTML more readable:
+:book: The example above contains a div with two elements "h1" and "p", separating the styles form the html would make the HTML more readable:
 
 ```html
 <div id="main-content">
@@ -189,16 +196,15 @@ p {
 }
 ```
 
-## :pencil2: Tasks
+## 1.2 - Create your own styles
 
-First open `index.html` and `styles.css` in IntelliJ or another editor. Then, navigate to `index.html` in your standard file
-browser (e.g., Windows Explorer or Finder), and double click it to open the file in a web browser.
+:pencil2: First open `index.html` and `styles.css` in your code editor. Then, navigate to `index.html` in your standard file browser (e.g., Windows Explorer or Finder), and double click it to open the file in a web browser.
 
-Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
+:book: Remember to ask if you are stuck on these tasks, also [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) is a good resource.
 
-#### Task 1
+### 1.2.1 - Task 1
 
-Change the color of the h1 element to red.
+:pencil2: Change the color of the h1 element to red.
 
 ```css
 h1 {
@@ -206,18 +212,21 @@ h1 {
 }
 ```
 
-#### Task 2
+### 1.2.2 - Task 2
 
-Make another identical selector for h1 below the previous one and set the color to blue. See that it overrides the existing css rule above it. You should have two h1 selector at this point.
+:pencil2: Make another identical selector for h1 below the previous one and set the color to blue. See that it overrides the existing css rule above it. You should have two h1 selector at this point.
+
 :exclamation: this is not best practise but only for illustrating how the cascade works.
 
-#### Task 3
+### 1.2.3 - Task 3
 
-Change the font for the entire HTML document to "Arial". Hint: use the property `font-family`.
+:pencil2: Change the font for the entire HTML document to "Arial". Hint: use the property `font-family`.
 
-#### Task 4
+### 1.2.4 - Task 4
 
-Notice that all images in the HTML have a class "image", create a new css rule for "image" at the bottom of the css window. Make the width and height 100px;
+:book: Notice that all images in the HTML have a class "image".
+
+:pencil2: create a new css rule for "image" at the bottom of the css window. Make the width and height 100px;
 
 ```css
 .image {
@@ -225,17 +234,18 @@ Notice that all images in the HTML have a class "image", create a new css rule f
 }
 ```
 
-#### Task 5
+### 1.2.5 - Task 5
 
-Make it so when you hover the checkboxes `<input>`, the cursor changes to a pointer 👆 , if you are unsure read the section on pseudo classes above.
-You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute `[type="checkbox"]`.
+:pencil2: Make it so when you hover the checkboxes `<input>`, the cursor changes to a pointer 👆 , if you are unsure read the section on pseudo classes above.
 
-#### Task 6
+:book: You can either target them by targeting all "input" elements or more specifically targeting elements with the attribute `[type="checkbox"]`.
 
-Add a inline style attribute to the h1 header and add a property that puts the font-size at 50px;
+### 1.2.6 - Task 6
 
-You can do this by using the `style` attribute on the `h1`-tag.
+:pencil2: Add a inline style attribute to the h1 header and add a property that puts the font-size at 50px;
+
+:book: You can do this by using the `style` attribute on the `h1`-tag.
 
 :bulb: This is only to illustrate that this is possible. It is generally recommended that you avoid adding inline CSS to your HTML files, as you may start to mix concerns regarding page structure and style, and this may cause a high degree of code duplication and code that is generally difficult to maintain.
 
-### [Go to exercise 2 :arrow_right:](../exercise-2/readme.md)
+## [Go to exercise 2 :arrow_right:](../exercise-2/readme.md)
