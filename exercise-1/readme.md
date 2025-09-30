@@ -35,7 +35,7 @@ In order to talk about selector specificity we should first talk about the main 
 
 ### Element
 
-An element selector is the most basic form of selector. Use the name of the corresponding HTML-element type you want to target, like `<div>`, `<p>`, `<span>`, `<body>` etc.
+An element selector (or type selector) is the most basic form of selector. Use the name of the corresponding HTML-element type you want to target, like `<div>`, `<p>`, `<span>`, `<body>` etc.
 
 ```css
 p {
