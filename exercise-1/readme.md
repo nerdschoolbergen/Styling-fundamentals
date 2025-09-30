@@ -216,7 +216,7 @@ h1 {
 
 :pencil2: Make another identical selector for h1 below the previous one and set the color to blue. See that it overrides the existing css rule above it. You should have two h1 selector at this point.
 
-:exclamation: this is not best practise but only for illustrating how the cascade works.
+:exclamation: This is not best practice but only for illustrating how the cascade works.
 
 ### 1.2.3 - Task 3
 
